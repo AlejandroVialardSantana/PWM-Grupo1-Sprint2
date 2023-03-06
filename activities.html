@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Organizador De Viajes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!-- css de todos los componentes -->
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/searchBar.css">
+    <link rel="stylesheet" type="text/css" href="./css/destiniesCaroussel.css">
+    <link rel="stylesheet" type="text/css" href="./css/destiniesRecommendations.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/activities.css">
+    <link rel="stylesheet" type="text/css" href="./css/filtros.css">
+    <link rel="stylesheet" type="text/css" href="./css/activityContainer.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+</head>
+
+<body>
+
+    <header id="main_header" w3-include-html="/views/header.html">
+    <!-- <object data="/views/header.html" type="text/html"></object> -->
+    </header>
+
+    <section class="home_container" id="home" w3-include-html="./views/searchBar.html"></section>
+    <section class="destinies_caroussel" id="destinies_caroussel" w3-include-html="./views/destiniesCaroussel.html"></section>
+
+    <section class="activities_container">
+        <div w3-include-html="./views/filtros.html"></div>
+        <div w3-include-html="./views/activityContainer.html"></div>
+    </section>
+
+    <footer id="main_footer" w3-include-html="./views/footer.html"></footer>
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+h4, h5{
+    margin:1rem
+}
+.filter_section {
+    display: flex;
+    background-color: #87A49B;
+    width: 16rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+.filtros{
+    display:flex;
+    align-items: left;
+    flex-direction: column;
+    background-color: #A0B1AC;
+    width: 16rem;
+    font-size: 1rem;
+    height: 100%;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.filter_range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #A0B1AC;
+    width: 14rem;
+    font-size: 1rem;
+    height: fit-content;
+    padding-top: 0.3rem;
+}
+
+.filter_range output{
+    font-size: 0.85rem;
+}
+
+.filter_check{
+    background-color: #A0B1AC;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.filter_check >label{
+    font-size: 1.1rem;
+    padding-left: 0.4rem;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    background-color: #DCDFDE;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    margin-bottom: 0.35rem;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "\2713";
+    width: 1rem;
+    height: 1rem;
+    font-weight: 600;
+    font-size: smaller;
+    background-color: #8DCDB8;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #DCDFDE;
+    border-radius: 5rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 1rem;
+    width: 1rem;
+    background-color: #87A49B;
+    border: 1px solid #000;
+}
+
+.range-label{
+    display: flex;
+    width: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    padding-right: 0.8rem;
+}
+

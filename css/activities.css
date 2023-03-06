@@ -1,0 +1,14 @@
+/* hacer el destinity carrousel más pequeño
+.destinies_caroussel {
+    transform: scale(0.5);
+}
+*/
+
+.activities_container{
+    display: flex;
+    height: fit-content;
+    gap: 3rem;
+    padding: 2rem;
+    justify-content: center;
+}
+

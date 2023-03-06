@@ -1,0 +1,81 @@
+<div class="filtros">
+    <h4>Filtrar por:</h4>
+    <div class="filter_section">
+        <h5>Duración de la actividad:</h5>
+    </div>
+    <div class="filter_range">
+        <div>
+            <input type="range" id="slider_hour" name="slider_hour" min="1" max="8" value="1"
+                   oninput="output_hour.value = slider_hour.value">
+                <output for="slider_hour" id="output_hour">1</output>
+        </div>
+        <div class="range-label">
+            <label>1H</label>
+            <label>8H</label>
+        </div>
+    </div>
+
+    <div class="filter_section">
+        <h5>Tipo de actividad:</h5>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Al aire libre</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Deportiva</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Cultural</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Espectáculo</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Gastronómica</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Ocio</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Relajante</label>
+    </div>
+
+    <div class="filter_section">
+        <h5>Coste máximo:</h5>
+    </div>
+    <div class="filter_range">
+        <div>
+            <input type="range" id="slider_cost" name="slider_cost" min="10" max="300" value="10"
+                   oninput="output_cost.value = slider_cost.value">
+            <output for="slider_cost" id="output_cost">10</output>
+        </div>
+        <div class="range-label">
+            <label>10€</label>
+            <label>300€</label>
+        </div>
+    </div>
+
+    <div class="filter_section">
+        <h5>Necesidades específicas:</h5>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Apto para niños</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Apto para mascotas</label>
+    </div>
+    <div class="filter_check">
+        <input type="checkbox" value="1">
+        <label>Apto para minusválidos</label>
+    </div>
+
+</div>
