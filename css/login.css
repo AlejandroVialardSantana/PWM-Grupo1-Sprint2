@@ -16,12 +16,12 @@ label{
 }
 
 .text{
-    border: 0.1rem black solid;
+    border: 1px black solid;
     border-radius: 0.6rem;
-    width: 19rem;
+    width: 100%;
     height: 2.8rem;
-    margin: 0.2rem;
     padding: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .button{
@@ -29,7 +29,6 @@ label{
     background-color: #558A78;
     width: 19rem;
     height: 2.8rem;
-    margin: 0.5rem;
     color: white;
     font-size: 1rem;
     transition: 0.2s;
@@ -64,4 +63,35 @@ label{
     outline: none;
     border: solid 0.1rem #f3f3f4;
     box-shadow: 0 0 0.4rem #A0B1AC;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;;
+}
+
+.googleBtn {
+    background-color: #558A78;
+    width: 19rem;
+    height: 2.8rem;
+    margin: 0 auto;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.googleBtn i {
+    margin-right: .5rem;
+}
+
+.googleBtn:hover {
+    background-color: #86CFB5;
+    cursor: pointer;
 }
