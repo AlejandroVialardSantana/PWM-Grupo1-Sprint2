@@ -1,3 +1,5 @@
+/* Estilos Predeterminados */
+
 .recuadroLogo {
     width: 13.56rem; /* Para pasar de pixeles a rem dividimos por 16 (como valores por defecto) */
     height: 3.44rem;
@@ -127,4 +129,30 @@ nav ul li:hover {
     display: block;
     left: 0; /* Agrega esta propiedad para posicionar el menú en la esquina izquierda */
     right: auto; /* Anula la propiedad right para que no afecte la posición */
+}
+
+/* Diseño Responsive:
+    ->Small devices (landscape phones, 576px and up)
+    ->Medium devices (tablets, 768px and up)
+    ->Large devices (desktops, 992px and up)
+    ->X-Large devices (large desktops, 1200px and up)
+    ->XX-Large devices (larger desktops, 1400px and up)
+ */
+
+/* Medium devices */
+
+@media (max-width: 890px) { /* poner min-width para probar como se va viendo sin tener que redimensionar la pantalla */
+
+    #header_logo {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+
+    nav{
+        display: none;
+    }
+
 }
