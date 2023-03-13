@@ -1,10 +1,14 @@
-<div id="header_logo">
+<div id="header_components">
+
+  <div id="menu_deplegable">
+    <input type="checkbox" id="menu_toggle" />
+    <label for="menu_toggle" class="bi bi-list"></label>
+  </div>
+
   <div class="recuadroLogo">
     <a href="../index.html"><img src="../images/logo.png" alt="Logo"></a>
   </div>
-</div>
 
-<div id="header_subOptions">
   <nav>
     <ul>
       <li><a href="#">DESTINOS</a></li>
@@ -12,23 +16,27 @@
       <li><a href="../aboutUs.html">SOBRE NOSOTROS</a></li>
     </ul>
   </nav>
-  <div class="circle_icon">
-    <i class="bi bi-globe2">
-      <div class="dropdown_content">
-        <a href="#">Español</a>
-        <a href="#">English</a>
-        <a href="#">Français</a>
-      </div>
-    </i>
+
+  <div id="header_subOptions">
+    <div class="circle_icon">
+      <i class="bi bi-globe2">
+        <div class="dropdown_content">
+          <a href="#">Español</a>
+          <a href="#">English</a>
+          <a href="#">Français</a>
+        </div>
+      </i>
+    </div>
+    <div class="circle_icon">
+      <i class="bi bi-person">
+        <div class="dropdown_content">
+          <a href="#">Perfil</a>
+          <a href="../myActivityList.html">Mis actividades</a>
+          <a href="#">Configuración</a>
+          <a href="#">Cerrar sesión</a>
+        </div>
+      </i>
+    </div>
   </div>
-  <div class="circle_icon">
-    <i class="bi bi-person">
-      <div class="dropdown_content">
-        <a href="#">Perfil</a>
-        <a href="../myActivityList.html">Mis actividades</a>
-        <a href="#">Configuración</a>
-        <a href="#">Cerrar sesión</a>
-      </div>
-    </i>
-  </div>
+
 </div>
