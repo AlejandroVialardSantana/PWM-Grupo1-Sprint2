@@ -117,6 +117,10 @@ footer .group_2 .content .box ul li a {
         text-align: center;
     }
 
+    footer .group_2 .content .box_logo {
+        margin-bottom: 0;
+    }
+
     footer .group_2 .content {
         flex-direction: column;
     }
@@ -130,10 +134,6 @@ footer .group_2 .content .box ul li a {
     footer .group_1 {
         grid-template-columns: repeat(1, 1fr);
         max-width: 30rem;
-    }
-
-    footer .group_2 .content .box_logo {
-        margin-bottom: 0;
     }
 
     footer .group_2 .content .box ul {
