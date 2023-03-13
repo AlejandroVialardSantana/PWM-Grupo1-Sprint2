@@ -26,21 +26,26 @@
 </head>
 
 <body>
-    
-	<header id="main_header" w3-include-html="/views/header.html"></header>
+
+    <header id="main_header" w3-include-html="/views/header.html"></header>
 
     <section class="home_container" id="home" w3-include-html="./views/searchBar.html"></section>
 
-    <section class="destinies_caroussel" id="destinies_caroussel" w3-include-html="./views/destiniesCaroussel.html"></section>
+    <div class="body_container">
 
-    <section class="destinies_recommendations" id="destinies_recommendations" w3-include-html="./views/destiniesRecommendations.html"></section>
+        <section class="destinies_caroussel" id="destinies_caroussel" w3-include-html="./views/destiniesCaroussel.html">
+        </section>
+
+        <section class="destinies_recommendations" id="destinies_recommendations"
+            w3-include-html="./views/destiniesRecommendations.html"></section>
+    </div>
 
     <footer id="main_footer" w3-include-html="./views/footer.html"></footer>
 
     <script>
         w3IncludeHTML();
     </script>
-	
+
 </body>
 
 </html>
