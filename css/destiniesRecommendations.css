@@ -20,7 +20,6 @@
 
 .line {
     width: 100%;
-    max-width: 75rem;
     height: 0.25rem;
     background-color: #558A78;
     margin-bottom: 1.5rem;
@@ -31,7 +30,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 75rem;
     margin-bottom: 3rem;
 }
 
@@ -67,4 +65,16 @@
 
 .most_visited_destinations_item_info i {
     margin-right: 0.5rem;
+}
+
+@media (max-width: 992px) {
+    .most_visited_destinations_items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .most_visited_destinations_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

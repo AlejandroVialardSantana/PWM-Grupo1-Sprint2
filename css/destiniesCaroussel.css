@@ -72,3 +72,15 @@
     color: #558A78;
     border: 1px solid #558A78;
 }
+
+@media (max-width: 992px) {
+    .destinies_caroussel_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .destinies_caroussel_items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

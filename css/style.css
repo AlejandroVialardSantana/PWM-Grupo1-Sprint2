@@ -28,3 +28,9 @@ header{
     z-index: 2; /* Establecemos un z-index mayor para evitar que el dropdown se quede solapado por la searchBar */
 }
 
+.container {
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
