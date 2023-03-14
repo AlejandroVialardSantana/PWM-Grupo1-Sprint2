@@ -124,10 +124,6 @@ footer .group_2 .content .box ul li a {
     footer .group_2 .content {
         flex-direction: column;
     }
-    
-    footer .group_2 .content .box_logo {
-        margin-bottom: 1rem;
-    }
 }
 
 @media (max-width: 510px) {
