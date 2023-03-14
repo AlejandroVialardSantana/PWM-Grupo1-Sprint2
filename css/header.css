@@ -3,6 +3,7 @@
 #header_components {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .recuadroLogo {
@@ -11,8 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 5%;
+    position: absolute;
+    left: 5rem;
 }
 
 .recuadroLogo img {
@@ -27,16 +28,12 @@
     margin: 0;
 }
 
-#nav_and_subOptions {
-    display: flex;
-    align-items: center;
-}
-
 #header_subOptions {
     display: flex; /* Utilizamos flexbox para ordenar las imágenes */
     gap: 1.75rem; /* Agregamos un espacio de 10px entre las imágenes */
-    position: relative;
-    right: 5%;
+    position: absolute;
+    right: 5rem;
+    width: 6.75rem; /* 2.5rem + 2.5rem + 1.75rem, esdecir los dos circulos y la separacion*/
 }
 
 /*
@@ -70,13 +67,12 @@ Creamos el circulo que contendrá el icono de la opción de lenguaje y de usuari
 /* Css de la barra de navegación */
 
 nav {
-    position: relative;
-    right: 0;
+    position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 0;
+    margin-right: 13.5rem; /* 5rem + 6.75rem + 1.75rem, es decir los dos circulos y la separacion + el right (5rem) + otra separacion*/
+    right: 0;
+    /* alienar a la derecha */
 }
 
 nav ul {
