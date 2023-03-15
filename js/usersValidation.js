@@ -13,6 +13,7 @@ $(document).ready(function () {
             }
             if (usuarioEncontrado && usuarioEncontrado.contraseña === contraseña) {
                 alert('Credenciales correctas. Bienvenido, ' + usuarioEncontrado.nombre + ' ' + usuarioEncontrado.apellido + '!');
+                window.location.href = '../index.html';
             } else {
                 alert('Credenciales incorrectas. Inténtalo de nuevo.');
             }
