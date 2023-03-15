@@ -1,21 +1,15 @@
-.container {
-    width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.home_activity_description {
+.img_activity_description {
     margin: 2rem auto;
 }
 
-.home_activity_description img {
+.img_activity_description img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .description {
-    margin: 2rem auto;
+    margin-bottom: 2rem;
 }
 
 .description h2 {
@@ -28,7 +22,8 @@
 .description p {
     font-size: 1.25rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    text-align: justify;
 }
 
 .line {
@@ -38,63 +33,219 @@
     margin: 1rem 0;
 }
 
-.activity_location {
+.activity_description .activity_details {
     margin: 2rem auto;
-    width: 45%;
-    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
-.activity_location h3 {
+.activity_description .activity_details .activity_location {
+    width: 100%;
+    height: 100%;
+    align-items: start;
+}
+
+.activity_description .activity_details .activity_location h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
-.activity_location p {
+.activity_description .activity_details .activity_location p {
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
-.activity_location i {
-    margin-right: 1rem;
+.activity_description .activity_details .activity_location i {
+    margin-right: 0.5rem;
 }
 
-.activity_location iframe {
+.activity_description .activity_details .activity_location iframe {
     width: 100%;
-    height: 30rem;
+    height: 20rem;
 }
 
-.activity_reviews {
-    margin: 2rem auto;
-    width: 50%;
+.activity_description .activity_details .activity_reviews {
     height: 100%;
-    float: right;
+    float: left;
 }
 
-.activity_reviews h3 {
+.activity_description .activity_details .activity_reviews h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
-.stars {
-    margin: 1rem auto;
-    width: 100%;
+.activity_description .activity_details .stars {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
 
-.reviews {
+.activity_description .activity_details .reviews {
+    height: 20rem;
     width: 100%;
-    height: 30rem;
     overflow-y: scroll;
+    align-items: start;
 }
 
-.review {
+.activity_description .activity_details .reviews .review {
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background-color: #ccc;
+    height: 50%;
     width: 100%;
-    height: 33.33%;
+    overflow: hidden;
+}
+
+.activity_description .activity_details .reviews .review p {
+    margin-bottom: 0;
+}
+
+.activity_description .activity_details .review:first-child {
+    margin-top: 0;
+}
+
+.activity_description .activity_details .review:last-child {
+    margin-bottom: 0;
+}
+
+.activity_description .activity_details .reviews .review .reviewer {
+    margin-top: auto;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.activity_description .activity_details .reviews .review .review_text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+@media (max-width: 1280px) {
+    .activity_description .activity_details .reviews .review .review_text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    .description h2 {
+        font-size: 1.5rem;
+    }
+
+    .description p {
+        font-size: 1.1rem;
+    }
+
+    .activity_description .activity_details .activity_location h3,
+    .activity_description .activity_details .activity_reviews h3 {
+        font-size: 1.25rem;
+    }
+
+    .activity_description .activity_details .activity_location p,
+    .activity_description .activity_details .stars {
+        font-size: 1.1rem;
+    }
+
+    .activity_description .activity_details .stars {
+        font-size: 1.1rem;
+    }
+
+    .activity_description .activity_details .reviews .review .reviewer {
+        font-size: 1rem;
+    }
+
+    .activity_description .activity_details .reviews .review .review_text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .activity_description .activity_details {
+        grid-template-columns: 1fr;
+    }
+
+    .activity_description .activity_details .activity_location {
+        margin-bottom: 2rem;
+    }
+
+    .activity_description .activity_details .reviews .review {
+        padding: 1rem
+    }
+}
+
+@media (max-width: 810px) {
+    .description h2 {
+        font-size: 1.25rem;
+    }
+
+    .description p,
+    .activity_description .activity_details .activity_location p,
+    .activity_description .activity_details .stars {
+        font-size: 1rem;
+    }
+
+    .activity_description .activity_details .activity_location h3,
+    .activity_description .activity_details .activity_reviews h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity_description .activity_details .activity_location iframe {
+        height: 15rem;
+    }
+
+    .activity_description .activity_details .reviews {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .img_activity_description {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        margin-left: -50vw;
+        margin-top: 0;
+    }
+
+
+    .activity_description .activity_details .reviews .review {
+        height: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .activity_description .activity_details .reviews .review {
+        height: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity_description .activity_details .reviews .review {
+        height: 80%;
+    }
+
+    .activity_description .activity_details .reviews .review .review_text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .img_activity_description {
+        height: 20rem;
+    }
+
+    .activity_description .activity_details .reviews .review {
+        height: 100%;
+    }
 }
