@@ -1,0 +1,63 @@
+.destinies_list{
+    display: grid;
+}
+
+.destination{
+    width: 2rem;
+    height: 2rem;
+}
+
+.destiny_name{
+    color: white;
+}
+
+#carouselEspana{
+    margin: 5rem auto;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    gap: 2rem;
+    float: none;
+    margin: 0;
+    transition: linear;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: linear;
+    float: none;
+    background-color: white;
+}
+
+
+.d-block{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(../images/next.png);
+    transform: scaleX(-1);
+    padding: 1.5rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/next.png);
+    padding: 1.5rem;
+}
