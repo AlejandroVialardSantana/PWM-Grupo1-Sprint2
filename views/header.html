@@ -1,8 +1,8 @@
 <div id="header_components">
 
   <div id="menu_deplegable">
-    <input type="checkbox" id="menu_toggle" />
-    <label for="menu_toggle" class="bi bi-list"></label>
+    <input type="checkbox" id="menu_toggle" onchange="display_menu()">
+    <label for="menu_toggle" id="menu_toggle_label" class="bi bi-list"></label>
   </div>
 
   <div class="recuadroLogo">
@@ -10,6 +10,8 @@
   </div>
 
   <nav>
+    <input type="checkbox" id="close_menu_toggle" onchange="close_menu()">
+    <label for="close_menu_toggle" id="close_menu_toggle_label" class="bi bi-x-lg"></label>
     <ul>
       <li><a href="#">DESTINOS</a></li>
       <li><a href="../activities.html">ACTIVIDADES</a></li>

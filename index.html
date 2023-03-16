@@ -39,6 +39,20 @@
 
     <script>
         w3IncludeHTML();
+
+        /* Código para desplegar el menú de diseño responsive */
+        function display_menu(){
+            /* Solo tenemos una barra de navegación, por ello es la primera que encuentre,
+            También mencionar que hacemos el display block para que se muestre
+             */
+
+            document.getElementsByTagName('nav')[0].style.left = "0";
+        }
+
+        function close_menu(){
+            /* Solo tenemos una barra de navegación */
+            document.getElementsByTagName('nav')[0].style.left = "-100%";
+        }
     </script>
 	
 </body>
