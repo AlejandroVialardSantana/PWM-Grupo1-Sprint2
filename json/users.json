@@ -3,19 +3,19 @@
       "nombre": "Juan",
       "apellido": "Pérez",
       "email": "juan.perez@example.com",
-      "contraseña": "contraseña1"
+      "contraseña": "123"
     },
     {
       "nombre": "María",
       "apellido": "González",
       "email": "maria.gonzalez@example.com",
-      "contraseña": "contraseña2"
+      "contraseña": "1234"
     },
     {
       "nombre": "Pedro",
       "apellido": "Gómez",
       "email": "pedro.gomez@example.com",
-      "contraseña": "contraseña3"
+      "contraseña": "12345"
     }
   ]
   
