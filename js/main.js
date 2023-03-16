@@ -6,6 +6,8 @@ function init() {
     loadTemplate('../views/searchBar.html', 'home');
     loadTemplate('../views/destiniesCaroussel.html', 'destinies_caroussel');
     loadTemplate('../views/destiniesRecommendations.html', 'destinies_recommendations');
+    loadTemplate('../views/accountManagSections.html', 'account_management');
+    loadTemplate('../views/caroussel.html', 'caroussel');
 }
 
 function loadTemplate(url, id) {
