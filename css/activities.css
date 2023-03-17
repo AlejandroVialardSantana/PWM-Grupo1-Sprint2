@@ -39,6 +39,17 @@
     transition: 0.3s;
 }
 
+.overlay {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
 
 @media (max-width: 750px), (orientation: portrait) {
     .activities_container_filtros {
@@ -49,6 +60,10 @@
 
     #filter_toggle:checked ~ .activities_container_filtros {
         left: 0;
+    }
+
+    #filter_toggle:checked ~ .overlay {
+        display: block;
     }
 
     #filter_toggle_label {
