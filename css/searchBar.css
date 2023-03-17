@@ -67,3 +67,56 @@
     background: #70b09a;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 992px) {
+    .home_container .home_content .search_bar {
+        max-width: 43.5rem;
+    }
+}
+
+@media (max-width: 810px) {
+    .home_container .home_content .search_bar {
+        max-width: 37.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .home_container .home_content .search_bar {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .home_container .home_content .search_bar {
+        max-width: 25rem;
+    }
+
+    .home_container .home_content h1 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home_container .home_content .search_bar {
+        max-width: 20rem;
+    }
+
+    .home_container .home_content h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .home_container .home_content .search_bar {
+        max-width: 15rem;
+    }
+
+    .home_container .home_content {
+        max-width: 15rem;
+    }
+
+    .search_bar button {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

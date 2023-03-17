@@ -1,0 +1,109 @@
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #000;
+    height: 15rem;
+    background-color: #558A78;
+}
+.destinies_caroussel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.destinies_caroussel .carousel-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 2.75rem;
+}
+
+#carouselEspana, #carouselEspana2, #carouselEspana3{
+    margin: 2rem auto;
+    max-width: 65rem;
+    max-height: 30%;
+}
+
+.carousel-inner{
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    float: none;
+    margin: 0;
+    transition: linear;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: linear;
+    float: none;
+    background-color: white;
+}
+
+.caroussel_item_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.imagen-info{
+    position: relative;
+}
+.d-block{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: fit-content;
+}
+
+.carousel-control-prev-icon{
+    background-image: url(../images/next.png);
+    transform: scaleX(-1);
+    padding: 1.5rem;
+    width: max-content;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../images/next.png);
+    padding: 1.5rem;
+    width: fit-content;
+}
+
+.d-block:hover  {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width: 1080px){
+    #carouselEspana, #carouselEspana2, #carouselEspana3{
+        margin: 3rem auto;
+        max-width: 50rem;
+        max-height: 30%;
+    }
+    .d-block{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+}

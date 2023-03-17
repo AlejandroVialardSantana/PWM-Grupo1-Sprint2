@@ -12,27 +12,32 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 
 <body>
 
-    <header id="main_header" w3-include-html="/views/header.html"></header>
+    <header id="main_header"></header>
 
     <div class="container">
         <h2>Iniciar sesión</h2>
-        <form>
+        <form id="formularioLogIn">
             <div class="field">
                 <label>E-mail:<br></label>
-                <input class="text" type="email" placeholder="Correo electrónico">
+                <input class="text" id="email" name="email" type="email" placeholder="Correo electrónico" required oninput="this.setCustomValidity('')">
+                <span id="email_error"></span>
             </div>
             <div class="field">
                 <label>Contraseña:<br></label>
-                <input class="text" type="password" placeholder="Contraseña">
+                <input class="text" id="password" name="password" type="password" placeholder="Contraseña" required>
+                <span id="password_error"></span>
             </div>
             <div class="field">
                 <input class="button" type="submit" value="Iniciar sesión">
+            </div>
+            <p>O</p>
+            <div class="googleBtn">
+                <i class="bi bi-google"></i>
+                <span>Continuar con Google</span>
             </div>
         </form>
         <div>
@@ -41,12 +46,10 @@
         </div>
     </div>
 
-    <footer id="main_footer" w3-include-html="footer.html"></footer>
-    <script>
+    <footer id="main_footer"></footer>
 
-        w3IncludeHTML();
-
-    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/loginValidation.js"></script>
 </body>
 
 </html>

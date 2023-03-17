@@ -43,6 +43,7 @@ footer .group_1 .box ul li {
 footer .group_1 .box ul li a {
     color: #fff;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 footer .group_1 .box ul li a:hover,
@@ -91,6 +92,7 @@ footer .group_2 .content .box ul li {
 footer .group_2 .content .box ul li a {
     color: #fff;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 @media (max-width: 1280px) {
@@ -109,20 +111,26 @@ footer .group_2 .content .box ul li a {
 
 @media (max-width: 960px) {
     footer .group_1 {
-        grid-template-columns: repeat(2, 1fr);
         max-width: 50rem;  
+    }
+}
+
+@media (max-width: 890px) {
+    footer .group_1 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 45rem;  
     }
 
     footer .group_1 .box {
         text-align: center;
     }
 
+    footer .group_2 .content .box_logo {
+        margin-bottom: 0;
+    }
+
     footer .group_2 .content {
         flex-direction: column;
-    }
-    
-    footer .group_2 .content .box_logo {
-        margin-bottom: 1rem;
     }
 }
 
@@ -130,10 +138,6 @@ footer .group_2 .content .box ul li a {
     footer .group_1 {
         grid-template-columns: repeat(1, 1fr);
         max-width: 30rem;
-    }
-
-    footer .group_2 .content .box_logo {
-        margin-bottom: 0;
     }
 
     footer .group_2 .content .box ul {

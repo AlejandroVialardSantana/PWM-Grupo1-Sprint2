@@ -1,0 +1,185 @@
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: none;
+    border: #558A78 2px solid;
+    border-radius: 15px;
+    opacity: 1;
+    min-width: 15rem;
+    max-width: 22rem;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #A0B1AC;
+    border-radius: 13px;
+    height: 6rem;
+}
+
+i {
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.parrafo {
+    margin: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.overlay-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.aviso {
+    width: fit-content;
+    padding-left: 1rem;
+    display: block;
+}
+
+.field-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.text {
+    border: 0.1rem black solid;
+    border-radius: 50px;
+    width: 19rem;
+    height: 2.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+
+.button,
+.button-danger {
+    border: none;
+    background-color: #558A78;
+    width: 50%;
+    padding: 0;
+    height: 2rem;
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s;
+    border-radius: 50px;
+    min-width: 12rem;
+}
+
+.button-danger {
+    background-color: #C6153F;
+}
+
+.button:hover {
+    background-color: #86CFB5;
+    cursor: pointer;
+}
+
+.button-danger:hover {
+    background-color: #cc4464;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #87A49B;
+}
+
+.text:hover,
+.text:focus {
+    outline: none;
+    border: solid 0.1rem #f3f3f4;
+    box-shadow: 0 0 0.4rem #A0B1AC;
+}
+
+.aviso {
+    font-size: smaller;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+
+    .text {
+        border: 0.1rem black solid;
+        border-radius: 20px;
+        width: 15rem;
+        height: 2.5rem;
+        margin: 0.15rem;
+        padding: 0 0.4rem;
+        font-size: 13px;
+    }
+
+    .button,
+    .button-danger {
+        padding: 0;
+        height: 1.8rem;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .head {
+        height: 5rem;
+    }
+
+    i {
+        font-size: 35px;
+    }
+
+    .aviso {
+
+        max-width: 15rem;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    .field,
+    label {
+        font-size: 13px;
+    }
+
+    .text {
+        width: 13rem;
+        height: 2rem;
+        margin: 0.1rem;
+        padding: 0 0.4rem;
+        font-size: 11px;
+    }
+
+    .button,
+    .button-danger {
+        padding: 0;
+        height: 1.8rem;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .head {
+        height: 4rem;
+    }
+
+    i {
+        font-size: 30px;
+    }
+}
