@@ -39,8 +39,8 @@
     <section class="destinies_caroussel" id="destinies_caroussel" w3-include-html="./views/destiniesCaroussel.html"></section>
 
     <section class="activities_container">
-        <div w3-include-html="./views/filtros.html"></div>
-        <div w3-include-html="./views/activityContainer.html"></div>
+        <div class="activities_container_filtros" w3-include-html="./views/filtros.html"></div>
+        <div class="activities_container_activity" w3-include-html="./views/activityContainer.html"></div>
     </section>
 
     <footer id="main_footer" w3-include-html="./views/footer.html"></footer>
@@ -48,6 +48,8 @@
     <script>
         w3IncludeHTML();
     </script>
+    /* Importante que el script del header se llame despues de cargar el header*/
+    <script src="js/header.js"></script>
 
 </body>
 

@@ -70,3 +70,22 @@
     font-weight: bold;
     line-height: 0.9rem; /* Se establece line-height en el mismo valor que la altura de la fuente para eliminar el espacio adicional alrededor del texto */
 }
+
+/* Media query para manejar el comportamiento responsive
+Básicamente creamos tramos en los que aplicamos un porcentaje del ancho de la ventana completa
+y lo multiplicamos por un factor para que el tamaño se reduzca poco a poco
+además de hacer varios tramos (mientras más tramos más smooth quedaría)
+*/
+@media (max-width: 1300px), (orientation: portrait) {
+    .activity_container_box{
+        width: calc(70vw * 0.85);
+    }
+}
+
+@media (max-width: 900px), (orientation: portrait) {
+    .activity_container_box{
+        width: calc(70vw * 0.75);
+    }
+}
+
+/* ultima modificacion cuando sea menor de 750px */
