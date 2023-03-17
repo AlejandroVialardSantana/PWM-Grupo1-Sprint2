@@ -20,6 +20,7 @@ h4, h5{
     height: 100%;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
+    border-radius: 0.35rem;
 }
 .filter_range{
     display: flex;
