@@ -12,3 +12,11 @@
     justify-content: center;
     background-color: #b9cbc5;
 }
+
+@media (max-width: 750px), (orientation: portrait) {
+    .activities_container_filtros {
+        position: absolute;
+        left: 0;
+        z-index: 10000;
+    }
+}
