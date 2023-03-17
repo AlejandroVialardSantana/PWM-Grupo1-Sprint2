@@ -8,14 +8,17 @@
     margin: 0 auto;
     position: relative;
 }
+.activity_container_box:not(:first-child) {
+    margin-top: 0.625rem; /* Separación entre las cajas */
+}
 
 .activity_container_box {
     display: flex;
     width: 50rem;
     border: 0.0625rem solid black;
-    margin: 0.625rem; /* Separación entre las cajas */
     padding: 0.3125rem; /* Separación entre el borde y el contenido */
     align-items: center;
+    border-radius: 0.35rem;
 }
 
 .activity_container_image {
@@ -66,4 +69,37 @@
     font-size: 0.9rem;
     font-weight: bold;
     line-height: 0.9rem; /* Se establece line-height en el mismo valor que la altura de la fuente para eliminar el espacio adicional alrededor del texto */
+}
+
+/* Media query para manejar el comportamiento responsive
+Básicamente creamos tramos en los que aplicamos un porcentaje del ancho de la ventana completa
+y lo multiplicamos por un factor para que el tamaño se reduzca poco a poco
+además de hacer varios tramos (mientras más tramos más smooth quedaría)
+*/
+@media (max-width: 1300px), (orientation: portrait) {
+    .activity_container_box{
+        width: calc(70vw * 0.85);
+    }
+}
+
+@media (max-width: 900px), (orientation: portrait) {
+    .activity_container_box{
+        width: calc(70vw * 0.75);
+    }
+}
+
+/* ultima modificacion cuando sea menor de 750px y crearemos la versión simplificada de la cajita sin imagenes... */
+@media (max-width: 750px), (orientation: portrait) {
+    .activity_container_box {
+        width: 20rem;
+        height: 8rem;
+    }
+
+    .activity_container_image {
+        display: none;
+    }
+
+    .activity_container_content {
+        height: 8rem;
+    }
 }
