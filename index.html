@@ -37,8 +37,16 @@
 
     <footer id="main_footer" w3-include-html="./views/footer.html"></footer>
 
-    <script src="js/main.js"></script>
-
+    <script>
+        w3IncludeHTML()
+    </script>
+	
+    /* Importante que el script del header se llame despues del w3IncludeHTML() */
+    <script src="js/header.js"></script>
+	
+	<script src="js/main.js"></script>
+	
+    
 </body>
 
 </html>
