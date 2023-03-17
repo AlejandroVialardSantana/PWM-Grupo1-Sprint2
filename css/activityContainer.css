@@ -88,4 +88,18 @@ además de hacer varios tramos (mientras más tramos más smooth quedaría)
     }
 }
 
-/* ultima modificacion cuando sea menor de 750px */
+/* ultima modificacion cuando sea menor de 750px y crearemos la versión simplificada de la cajita sin imagenes... */
+@media (max-width: 750px), (orientation: portrait) {
+    .activity_container_box {
+        width: 20rem;
+        height: 8rem;
+    }
+
+    .activity_container_image {
+        display: none;
+    }
+
+    .activity_container_content {
+        height: 8rem;
+    }
+}
