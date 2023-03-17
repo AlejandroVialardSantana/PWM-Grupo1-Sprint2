@@ -190,7 +190,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 
 /* Medium devices */
 
-@media (max-width: 890px) { /* poner min-width para probar como se va viendo sin tener que redimensionar la pantalla */
+@media (max-width: 890px), (orientation: portrait) { /* poner min-width para probar como se va viendo sin tener que redimensionar la pantalla */
 
     .side-nav ul {
         flex-direction: column; /* Cambia la orientación a vertical */

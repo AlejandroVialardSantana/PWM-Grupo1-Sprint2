@@ -8,12 +8,14 @@
     margin: 0 auto;
     position: relative;
 }
+.activity_container_box:not(:first-child) {
+    margin-top: 0.625rem; /* Separación entre las cajas */
+}
 
 .activity_container_box {
     display: flex;
     width: 50rem;
     border: 0.0625rem solid black;
-    margin: 0.625rem; /* Separación entre las cajas */
     padding: 0.3125rem; /* Separación entre el borde y el contenido */
     align-items: center;
 }
