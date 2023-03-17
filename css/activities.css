@@ -19,6 +19,7 @@
 }
 
 #filter_toggle_label {
+    display: none;
     position: absolute;
     cursor: pointer;
     font-size: 2rem;
@@ -27,7 +28,6 @@
     transform: translateY(-2rem);
     color: #252525;
     z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-    display: flex;
     align-items: center; /* Centra verticalmente el texto con respecto al icono de boostrap */
 }
 
@@ -35,11 +35,24 @@
     font-size: 1rem; /* Establece el tamaño de fuente deseado para el texto "Filtros" */
 }
 
+.activities_container_filtros{
+    transition: 0.3s;
+}
+
+
 @media (max-width: 750px), (orientation: portrait) {
     .activities_container_filtros {
         position: absolute;
-        left: 0;
+        left: -100%;
         z-index: 10000;
-        display: none;
     }
+
+    #filter_toggle:checked ~ .activities_container_filtros {
+        left: 0;
+    }
+
+    #filter_toggle_label {
+        display: flex;
+    }
+
 }
