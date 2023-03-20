@@ -1,0 +1,22 @@
+{
+  "id": "1",
+  "name": "Surf en Gran Canaria",
+  "description": "Gran Canaria es un lugar perfecto para practicar surf. Sus playas tienen olas ideales para surfear y hay muchas escuelas de surf que ofrecen clases para principiantes y para aquellos que quieren mejorar su técnica.",
+  "image": "https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/recursosturisticos/infoturistica/surf-en-gran-canaria-imagen.jpg?itok=Ma-oT1RY",
+  "location": "Playa de las Canteras, 35008 Las Palmas de Gran Canaria, España",
+  "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.6037609146856!2d-15.430257985013074!3d28.1360985840505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4096f0b6fb2c19%3A0xa964e05e0455ba9b!2sPlaya%20de%20las%20Canteras!5e0!3m2!1ses!2ses!4v1677995306552!5m2!1ses!2ses",
+  "user_reviews": [
+    {
+      "username": "DavidM",
+      "opinion": "Hacer surf en Gran Canaria fue una experiencia increíble. Las olas son perfectas para principiantes y hay muchas escuelas de surf con instructores amables y pacientes. ¡Definitivamente lo recomiendo!"
+    },
+    {
+      "username": "SofiaR",
+      "opinion": "Surfear en Gran Canaria fue una de las mejores partes de mi viaje. Las playas son hermosas y las olas son perfectas para surfear. ¡Definitivamente volvería!"
+    },
+    {
+      "username": "PabloG",
+      "opinion": "Gran Canaria es uno de los mejores lugares para practicar surf en Europa. Las playas son hermosas y las olas son perfectas para todos los niveles de experiencia. ¡No te lo pierdas si eres un amante del surf!"
+    }
+  ]
+}

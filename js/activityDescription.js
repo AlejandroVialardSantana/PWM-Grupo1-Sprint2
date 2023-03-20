@@ -6,7 +6,17 @@ function init() {
     loadTemplate('../views/destiniesCaroussel.html', 'destinies_caroussel');
     loadTemplate('../views/activityInfo.html', 'activity_description');
 
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var locationJsonPatch = urlParams.get('location') + ".json";
+
+    alert("yeeey: " + locationJsonPatch);
+
+    loadJSON('../json/' + locationJsonPatch, function (data) {
+
+        /*
     loadJSON('../json/activities.json', function (data) {
+         */
     });
 }
 
