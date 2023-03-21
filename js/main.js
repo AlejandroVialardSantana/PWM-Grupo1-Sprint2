@@ -8,6 +8,7 @@ function init() {
     loadTemplate('../views/destiniesRecommendations.html', 'destinies_recommendations');
     loadTemplate('../views/accountManagSections.html', 'account_management');
     loadTemplate('../views/caroussel.html', 'caroussel');
+    loadTemplate('../views/aboutUsTemplate.html', 'about_us');
 }
 
 function loadTemplate(url, id) {
