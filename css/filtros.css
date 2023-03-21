@@ -32,6 +32,7 @@ h4, h5{
     font-size: 1rem;
     height: fit-content;
     padding-top: 0.3rem;
+    margin: 0 auto;
 }
 
 .filter_range output{
@@ -52,7 +53,18 @@ h4, h5{
     padding-left: 0.4rem;
 }
 
-input[type="checkbox"]:hover {
+#output_cost{
+    min-width: 1.4rem;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+input[type="checkbox"]:hover, .filter_check label:hover {
     cursor: pointer;
 }
 
