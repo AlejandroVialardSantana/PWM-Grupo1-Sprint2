@@ -1,0 +1,24 @@
+{
+    "id": "1",
+    "name": "Parque del Retiro",
+    "description": "El Parque del Retiro es un gran parque público situado en el centro de Madrid, España. Es un oasis de tranquilidad y belleza en medio del bullicio de la ciudad.",
+    "image": "https://pequeviajes.com/wp-content/uploads/2018/12/parque-del-retiro.jpg",
+    "location": "Plaza de la Independencia, 7, 28001 Madrid, España",
+    "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+    "user_reviews": [
+      {
+        "username": "Maria88",
+        "opinion": "Me encanta el Parque del Retiro, es un lugar hermoso para relajarse y disfrutar del aire libre. Los jardines son espectaculares y hay muchas actividades para hacer."
+      },
+      {
+        "username": "JuanPablo",
+        "opinion": "El Parque del Retiro es uno de mis lugares favoritos en Madrid. Es ideal para ir a correr, hacer picnics, pasear en bote, y muchas cosas más. Definitivamente lo recomiendo."
+      },
+      {
+        "username": "AnaGarcia",
+        "opinion": "Si visitas Madrid, no puedes perderte el Parque del Retiro. Es un oasis de paz en medio de la ciudad, con lagos, fuentes, y muchos rincones hermosos para explorar."
+      }
+    ]
+}
+
+  
