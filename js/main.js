@@ -24,10 +24,6 @@ function init() {
         });
 
     });
-
-
-
-
 }
 
 function loadTemplate(url, id, callback) {

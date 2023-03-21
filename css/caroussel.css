@@ -96,7 +96,7 @@
 }
 
 @media (max-width: 1080px){
-    #carouselEspana{
+    #carouselEspana, #carouselEspana2, #carouselEspana3{
         margin: 3rem auto;
         max-width: 50rem;
         max-height: 30%;

@@ -1,25 +1,28 @@
-.sections{
+.sections {
     display: flex;
     flex-direction: column;
+    margin:0;
 }
-.section-title{
+
+.section-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 2rem;
 }
- i{
+
+i {
     font-size: 45px;
     padding: 0;
     margin: 0;
- }
+}
 
-#h2-title{
+#h2-title {
     padding: 0;
     margin-bottom: 0;
 }
 
-.hr-big{
+.hr-big {
     margin: 0;
     margin-bottom: 0.3rem;
     height: 10px;
@@ -27,23 +30,115 @@
     border-color: #87A49B;
 }
 
-.hr-small{
+.hr-small {
     height: 3px;
     background: #87A49B;
     border-color: #87A49B;
 }
 
-.section-field{
+.section-field {
     display: flex;
     gap: 1.5rem;
     font-size: 25px;
 }
-.field-name{
+
+.field-name {
     font-weight: 700;
     font-size: 25px;
     padding: 0 15px;
 }
+.button_open_overlay{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
 
 .btn{
-    float: right;
+    max-width: 15rem;
+}
+
+@media (max-width:800px) {
+    .section-title {
+        gap: 0.3rem;
+        margin-top: 2rem;
+        font-size: 20;
+    }
+
+    i {
+        font-size: 35px;
+    }
+
+    .field-name {
+        font-size: 18px;
+        padding: 0 13px;
+    }
+
+    .section-field span {
+        font-size: 16px;
+    }
+    .button_open_overlay{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px) {
+    #h2-title {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 30px;
+    }
+
+    .field-name {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .section-field span {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:480px) {
+    #h2-title {
+        font-size: 15px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .field-name {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .section-field span {
+        font-size: 12px;
+    }
+
+    .button_open_overlay button{
+        font-size: 13px;
+    }
+       
+}
+
+@media (max-width: 390px){
+    .button_open_overlay{
+        display: grid;
+        grid-template-columns: 0 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .field-name {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .section-field span {
+        font-size: 11px;
+    }
 }
