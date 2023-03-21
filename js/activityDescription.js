@@ -5,19 +5,7 @@ function init() {
     loadTemplate('../views/footer.html', 'main_footer');
     loadTemplate('../views/destiniesCaroussel.html', 'destinies_caroussel');
     loadTemplate('../views/activityInfo.html', 'activity_description');
-
-
-    var urlParams = new URLSearchParams(window.location.search);
-    var locationJsonPatch = urlParams.get('location') + ".json";
-
-    alert("yeeey: " + locationJsonPatch);
-
-    loadJSON('../json/' + locationJsonPatch, function (data) {
-
-        /*
-    loadJSON('../json/activities.json', function (data) {
-         */
-    });
+    loadActivity();
 }
 
 function loadTemplate(url, id) {
@@ -28,19 +16,25 @@ function loadTemplate(url, id) {
         });
 }
 
-function loadJSON(url, callback) {
+function loadJSON(url, activityName, callback) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('activity_img').src = data.image;
-            document.getElementById('activity_name').textContent = data.name;
-            document.getElementById('activity_info_description').textContent = data.description;
-            document.getElementById('activity_location').textContent = data.location;
-            document.getElementById("activity_map").setAttribute("src", data.location_map);
+
+            var activity = data.activities.find(function (activity) {
+                return activity.name === activityName;
+            });
+
+            document.getElementById('activity_img').src = activity.image;
+            document.getElementById('activity_img').alt = activity.name;   
+            document.getElementById('activity_name').textContent = activity.name;
+            document.getElementById('activity_info_description').textContent = activity.description;
+            document.getElementById('activity_location').textContent = activity.location;
+            document.getElementById("activity_map").setAttribute("src", activity.location_map);
             const reviewsContainer = document.getElementById("reviews_container");
 
-            for (let i = 0; i < data.user_reviews.length; i++) {
-                const review = data.user_reviews[i];
+            for (let i = 0; i < activity.user_reviews.length; i++) {
+                const review = activity.user_reviews[i];
 
                 const reviewElement = document.createElement("div");
                 reviewElement.className = "review";
@@ -65,4 +59,14 @@ function loadJSON(url, callback) {
 
             callback(data);
         });
+}
+
+function loadActivity() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var locationJsonPatch = urlParams.get('location') + ".json";
+    var activityName = urlParams.get('name');
+
+    loadJSON('../json/' + locationJsonPatch, activityName, function (data) {
+
+    });
 }
