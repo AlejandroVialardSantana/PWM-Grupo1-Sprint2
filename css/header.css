@@ -277,3 +277,28 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 
 }
 
+/* 440 o menos de esto quitar el icono de idioma y situarlo en el desplegable */
+@media (max-width: 330px) and (orientation: portrait) {
+
+    :root{
+        --scale_value: 0.85;
+    }
+
+    #menu_deplegable{
+        transform: scale(var(--scale_value));
+        left: -1.05rem;
+    }
+
+    .recuadroLogo{
+        transform: scale(var(--scale_value));
+    }
+
+    #header_subOptions{
+        transform: scale(var(--scale_value));
+        right: 0.05rem;
+    }
+
+}
+
+
+
