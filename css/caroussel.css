@@ -8,54 +8,64 @@
     height: 15rem;
     background-color: #558A78;
 }
+
 .destinies_caroussel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    position: relative;
+    width: 100%;
+    margin: 2rem auto;
 }
 
-.destinies_caroussel .carousel-title {
+.destinies_caroussel .carousel_title {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     color: #000;
     text-transform: uppercase;
-    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-#carouselEspana, #carouselEspana2, #carouselEspana3{
-    margin: 2rem auto;
-    max-width: 65rem;
-    max-height: 30%;
-}
-
-.carousel-inner{
+.slick_list{
+    position: relative;
     display: flex;
     align-items: center;
+    height: 20rem;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
 }
 
-.carousel-item.active {
+.slick_track{
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    float: none;
-    margin: 0;
-    transition: linear;
+    justify-content: center;
+    transition: .5s ease-in-out;
 }
 
-.carousel-item {
+.slick{
+    position: relative;
+    margin: 0 2.5rem;
+    width: 20rem;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: linear;
-    float: none;
-    background-color: white;
+    height: 20rem;
+    overflow: hidden;
 }
 
-.caroussel_item_info {
+.slick:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.slick img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.5);
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.slick .destinies_caroussel_item_info {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,46 +74,169 @@
     color: #fff;
 }
 
-.imagen-info{
-    position: relative;
-}
-.d-block{
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
+.slick .destinies_caroussel_item_info i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
 }
 
-.carousel-control-next, .carousel-control-prev{
-    width: fit-content;
-}
+/* buttons */
 
-.carousel-control-prev-icon{
-    background-image: url(../images/next.png);
-    transform: scaleX(-1);
-    padding: 1.5rem;
-    width: max-content;
-}
-
-.carousel-control-next-icon {
-    background-image: url(../images/next.png);
-    padding: 1.5rem;
-    width: fit-content;
-}
-
-.d-block:hover  {
-    transform: scale(1.1);
+.slick_arrow{
+    border-radius: 30px;
+    background-color: #558A78;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
-@media (max-width: 1080px){
-    #carouselEspana, #carouselEspana2, #carouselEspana3{
-        margin: 3rem auto;
-        max-width: 50rem;
-        max-height: 30%;
+.slick_arrow i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.slick_arrow:hover {
+    background-color: #6fad99;
+}
+
+.slick_prev{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick_next{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1280px) {
+    .slick {
+        margin: 0 1.5rem;
+        width: 18rem;
+        height: 18rem;
     }
-    .d-block{
+}
+
+@media (max-width: 1080px) {
+    .slick {
         width: 15rem;
         height: 15rem;
-        object-fit: cover;
+    }
+
+    .slick_arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slick_arrow i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .slick {
+        margin: 0 2.5rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .slick_arrow {
+        width: 48px;
+        height: 48px;
+    }
+
+    .slick_arrow i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 890px) {
+    .slick {
+        width: 18rem;
+        height: 18rem;
+        margin: 0 2.25rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .slick {
+        width: 16rem;
+        height: 16rem;
+        margin: 0 0.75rem;
+    }
+
+    .slick_arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slick_arrow i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .slick {
+        width: 14rem;
+        height: 14rem;
+        margin: 0 0.5rem;
+    }
+
+    .slick_arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .slick_arrow i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .slick {
+        width: 18rem;
+        height: 18rem;
+        margin: 0 3.5rem;
+    }
+
+    .slick_arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slick_arrow i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slick {
+        width: 16rem;
+        height: 16rem;
+        margin: 0 2rem;
+    }
+
+    .slick_arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .slick_arrow i {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .slick {
+        width: 12.5rem;
+        height: 12.5rem;
+        margin: 0 1.25rem;
     }
 }
