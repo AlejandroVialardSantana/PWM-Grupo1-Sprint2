@@ -1,0 +1,114 @@
+{
+    "activities": [
+      {
+        "id": "1",
+        "name": "Caminito del Rey",
+        "description": "El Caminito del Rey es un sendero situado en el Desfiladero de los Gaitanes, en la provincia de Málaga, España. Es conocido por su impresionante paisaje y su peligrosidad, que lo convierten en una experiencia única para los amantes de la aventura.",
+        "image": "https://i.promecal.es/IMG/2022/B8C0CD2F-B6C6-B0D4-A00F79992601CD2C.JPEG",
+        "location": "29550 Ardales, Málaga, España",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.308292237283!2d-4.804931849492867!3d36.91694737993257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7234e9d2c60ebd%3A0x16a02a08c7931d06!2sEl%20Caminito%20del%20Rey!5e0!3m2!1sen!2ses!4v1677577924803!5m2!1sen!2ses",
+        "user_reviews": [
+          {
+            "username": "PedroGonzalez",
+            "opinion": "El Caminito del Rey es una experiencia increíble. El paisaje es impresionante y la sensación de caminar por el sendero es indescriptible. Lo recomiendo a todos los amantes de la aventura."
+          },
+          {
+            "username": "SofiaMolina",
+            "opinion": "Si buscas una aventura emocionante en Málaga, el Caminito del Rey es el lugar ideal. Aunque puede ser un poco peligroso, vale la pena hacerlo. Las vistas son espectaculares y la sensación de superación al completarlo es incomparable."
+          },
+          {
+            "username": "DavidRuiz",
+            "opinion": "El Caminito del Rey es una de las mejores experiencias que he tenido en Málaga. El sendero es espectacular y las vistas son impresionantes. Aunque puede ser un poco intimidante al principio, con precaución y siguiendo las instrucciones, se puede hacer sin problemas."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Centro Pompidou Málaga",
+        "description": "El Centro Pompidou Málaga es un museo de arte moderno y contemporáneo ubicado en el Puerto de Málaga, España. Es una sucursal del famoso Centro Pompidou de París y cuenta con una colección permanente de obras de artistas como Picasso, Miró y Chagall, así como con exposiciones temporales de artistas contemporáneos.",
+        "image": "https://www.centrepompidou-malaga.eu/wp-content/uploads/2021/06/home-1.jpg",
+        "location": "Pasaje Doctor Carrillo Casaux, s/n, 29016 Málaga, España",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.4084640599166!2d-4.415786684238197!3d36.714983579958206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78ee076f97d%3A0x12cc7e9b84f9ca0!2sCentre%20Pompidou%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1677579973627!5m2!1sen!2ses",
+        "user_reviews": [
+          {
+            "username": "SaraMartinez",
+            "opinion": "El Centro Pompidou Málaga es uno de los mejores museos de arte moderno que he visitado. La colección permanente es impresionante y las exposiciones temporales siempre son interesantes. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "PedroGonzález",
+            "opinion": "Si te gusta el arte moderno y contemporáneo, el Centro Pompidou Málaga es un lugar que no puedes perderte. Además, su ubicación en el Puerto de Málaga lo hace aún más atractivo."
+          },
+          {
+            "username": "CarmenRuiz",
+            "opinion": "El Centro Pompidou Málaga es un museo impresionante que ofrece una experiencia única. Las obras expuestas son de alta calidad y el edificio en sí mismo es una obra de arte."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Catedral de Málaga",
+        "description": "La Catedral de Málaga es una catedral católica situada en el centro de la ciudad de Málaga, España. Es la sede de la Diócesis de Málaga y es uno de los principales monumentos de la ciudad. La catedral fue construida en el siglo XVI y es una de las más grandes de España.",
+        "image": "https://www.visitacostadelsol.com/images/catedralmalaga/IMG_20190720_110000.jpg",
+        "location": "Plaza de la Constitución, 29015 Málaga, España",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.4084640599166!2d-4.415786684238197!3d36.714983579958206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78ee076f97d%3A0x12cc7e9b84f9ca0!2sCentre%20Pompidou%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1677579973627!5m2!1sen!2ses",
+        "user_reviews": [
+          {
+            "username": "SaraMartinez",
+            "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "PedroGonzález",
+            "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "CarmenRuiz",
+            "opinion": "La Catedral de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Alcazaba de Málaga",
+        "description": "La Alcazaba de Málaga es un castillo árabe situado en la ciudad de Málaga, España. Es uno de los principales monumentos de la ciudad y es una de las mejores muestras de la arquitectura árabe en España. La Alcazaba fue construida en el siglo IX y es una de las más antiguas de España.",
+        "image": "https://www.visitacostadelsol.com/images/alcazaba/IMG_20190720_110000.jpg",
+        "location": "Plaza de la Constitución, 29015 Málaga, España",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.4084640599166!2d-4.415786684238197!3d36.714983579958206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78ee076f97d%3A0x12cc7e9b84f9ca0!2sCentre%20Pompidou%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1677579973627!5m2!1sen!2ses",
+        "user_reviews": [
+          {
+            "username": "SaraMartinez",
+            "opinion": "La Alcazaba de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "PedroGonzález",
+            "opinion": "La Alcazaba de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "CarmenRuiz",
+            "opinion": "La Alcazaba de Málaga es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Castillo de Gibralfaro",
+        "description": "El Castillo de Gibralfaro es un castillo situado en la ciudad de Málaga, España. Es uno de los principales monumentos de la ciudad y es una de las mejores muestras de la arquitectura árabe en España. El castillo fue construido en el siglo IX y es una de las más antiguas de España.",
+        "image": "https://www.visitacostadelsol.com/images/castillogibralfaro/IMG_20190720_110000.jpg",
+        "location": "Plaza de la Constitución, 29015 Málaga, España",
+        "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.4084640599166!2d-4.415786684238197!3d36.714983579958206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f78ee076f97d%3A0x12cc7e9b84f9ca0!2sCentre%20Pompidou%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1677579973627!5m2!1sen!2ses",
+        "user_reviews": [
+          {
+            "username": "SaraMartinez",
+            "opinion": "El Castillo de Gibralfaro es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "PedroGonzález",
+            "opinion": "El Castillo de Gibralfaro es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          },
+          {
+            "username": "CarmenRuiz",
+            "opinion": "El Castillo de Gibralfaro es una de las mejores catedrales que he visitado. Es una obra de arte impresionante y la visita guiada es muy interesante. ¡Definitivamente recomendado!"
+          }
+        ]
+      }
+    ]
+}            

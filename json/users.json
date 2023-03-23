@@ -1,21 +1,32 @@
-[
+{
+  "users": [
     {
+      "id": 1,
       "nombre": "Juan",
       "apellido": "Pérez",
       "email": "juan.perez@example.com",
-      "contraseña": "contraseña1"
+      "contraseña": "123"
     },
     {
+      "id": 2,
       "nombre": "María",
       "apellido": "González",
       "email": "maria.gonzalez@example.com",
-      "contraseña": "contraseña2"
+      "contraseña": "1234"
     },
     {
+      "id": 3,
       "nombre": "Pedro",
       "apellido": "Gómez",
       "email": "pedro.gomez@example.com",
-      "contraseña": "contraseña3"
+      "contraseña": "12345"
+    },
+    {
+      "nombre": "javier",
+      "apellido": "perez",
+      "email": "javier@hotmail.com",
+      "contraseña": "12345678",
+      "id": 4
     }
   ]
-  
+}

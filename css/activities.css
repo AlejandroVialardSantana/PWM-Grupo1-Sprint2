@@ -2,13 +2,123 @@
 .destinies_caroussel {
     transform: scale(0.5);
 }
-*/
 
-.activities_container{
-    display: flex;
-    height: fit-content;
-    gap: 3rem;
-    padding: 2rem;
-    justify-content: center;
+
+.destinies_caroussel_items {
+    flex-direction: row;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
 }
 
+.destinies_caroussel_item {
+    height: 15rem;
+}
+
+.destinies_caroussel_button {
+    display: none;
+}
+*/
+
+.activities_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 3rem;
+    background-color: #b9cbc5;
+    height: 65rem;
+}
+
+#filter_toggle {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#filter_toggle_label {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    top: auto;
+    left: 2vw;
+    transform: translateY(-2rem);
+    color: #252525;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    align-items: center; /* Centra verticalmente el texto con respecto al icono de boostrap */
+}
+
+.filter_text {
+    font-size: 1rem; /* Establece el tamaño de fuente deseado para el texto "Filtros" */
+}
+
+.activities_container_filtros{
+    transition: 0.3s;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+
+@media (max-width: 750px) and (orientation: portrait) {
+    .activities_container_filtros {
+        position: absolute;
+        left: -100%;
+        z-index: 10000;
+    }
+
+    #filter_toggle:checked ~ .activities_container_filtros {
+        left: 0;
+    }
+
+    #filter_toggle:checked ~ .overlay {
+        display: block;
+    }
+
+    #filter_toggle_label {
+        display: flex;
+    }
+
+    .activities_container_activity{
+        position: absolute;
+    }
+
+    .activities_container{
+        height: 50rem;
+    }
+
+    .overlay{
+        height: 48rem;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .activities_container{
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 390px) and (orientation: portrait) {
+
+    .activities_container_activity{
+        transform: scale(0.90);
+    }
+
+}
+
+@media (max-width: 305px) and (orientation: portrait) {
+
+    .activities_container_activity {
+        transform: scale(0.83);
+    }
+
+}
