@@ -72,24 +72,25 @@
 }
 
 /* Media query para manejar el comportamiento responsive
-Básicamente creamos tramos en los que aplicamos un porcentaje del ancho de la ventana completa
-y lo multiplicamos por un factor para que el tamaño se reduzca poco a poco
-además de hacer varios tramos (mientras más tramos más smooth quedaría)
+Buscamos crear un efecto de reducción progresiva a medida que redimensionamos la pantalla,
+para ello el algoritmo tiene dos partes. Si la altura ya es mayor al ancho, simplemente vamos reduciendo
+el ancho, pero en caso contrario, vamos reduciendo hasta que las proporciones hayan cambiado y haya pasado
+de landscape a portrait, aplicamos un pequeña redimensión y esto le lleva de nuevo a ser un landscape...
 */
-@media (max-width: 1300px), (orientation: portrait) {
+@media (max-width: 1190px), (orientation: portrait) and (max-height: 1190px) {
     .activity_container_box{
-        width: calc(70vw * 0.85);
+        width: calc(65vw * 0.85);
     }
 }
 
-@media (max-width: 900px), (orientation: portrait) {
+@media (max-width: 900px), (orientation: portrait) and (max-height: 900px) {
     .activity_container_box{
-        width: calc(70vw * 0.75);
+        width: calc(65vw * 0.75);
     }
 }
 
 /* ultima modificacion cuando sea menor de 750px y crearemos la versión simplificada de la cajita sin imagenes... */
-@media (max-width: 750px), (orientation: portrait) {
+@media (max-width: 750px), (orientation: portrait) and (max-width: 750px){
     .activity_container_box {
         width: 20rem;
         height: 8rem;
