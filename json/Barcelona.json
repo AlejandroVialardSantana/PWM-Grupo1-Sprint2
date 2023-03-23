@@ -1,0 +1,48 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Basílica de la Sagrada Familia",
+            "description": "Visita guiada a la Basílica de la Sagrada Familia",
+            "image": "http://www.barcelona-tourist-guide.com/images/sagrada-familia.jpg",
+            "location": "Carrer de Mallorca, 401, 08013 Barcelona",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.7550000000006!2d2.1679999999999997!3d41.403999999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498a4b5b5b5b5%3A0x1b2b2b2b2b2b2b2b2!2sSagrada+Familia!5e0!3m2!1ses!2ses!4v1445410000000",
+            "user_reviews": [
+                {
+                    "username": "Paco Perez",
+                    "opinion": "Muy buena visita, la guía muy amable y simpática"
+                },
+                {
+                    "username": "Maria Lopez",
+                    "opinion": "Muy buena visita, la guía muy amable y simpática"
+                },
+                {
+                    "username": "Juan Garcia",
+                    "opinion": "Muy buena visita, la guía muy amable y simpática"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Parque Güell",
+            "description": "Visita guiada al Parque Güell",
+            "image": "http://www.barcelona-tourist-guide.com/images/guell-park.jpg",
+            "location": "Carrer de Mallorca, 401, 08013 Barcelona",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.7550000000006!2d2.1679999999999997!3d41.403999999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498a4b5b5b5b5%3A0x1b2b2b2b2b2b2b2b2!2sSagrada+Familia!5e0!3m2!1ses!2ses!4v1445410000000",
+            "user_reviews": [
+                {
+                    "username": "Paco Perez",
+                    "opinion": "Muy buena visita, la guía muy amable y simpática"
+                },
+                {
+                    "username": "Maria Lopez",
+                    "opinion": "Muy buena visita, la guía muy amable y simpática"
+                },
+                {
+                    "username": "Juan Garcia",
+                    "opinion": "Muy buena visita, la guía muy amable y simpática"
+                }
+            ]
+        }
+    ]
+}

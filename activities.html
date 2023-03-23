@@ -31,12 +31,15 @@
 
 <body>
 
-    <header id="main_header" w3-include-html="/views/header.html">
+    <header id="main_header">
     <!-- <object data="/views/header.html" type="text/html"></object> -->
     </header>
 
-    <section class="home_container" id="home" w3-include-html="./views/searchBar.html"></section>
-    <section class="destinies_caroussel" id="destinies_caroussel" w3-include-html="./views/destiniesCaroussel.html"></section>
+    <section class="home_container" id="home"></section>
+    
+    <div class="body_container">
+        <section class="destinies_caroussel" id="destinies_caroussel"></section>
+    </div>
 
     <section class="activities_container">
         <input type="checkbox" id="filter_toggle">
@@ -44,15 +47,13 @@
             <span class="filter_text">Filtros</span>
         </label>
         <div class="overlay"></div> <!-- para crear el efecto de sombreado -->
-        <div class="activities_container_filtros" w3-include-html="./views/filtros.html"></div>
-        <div class="activities_container_activity" w3-include-html="./views/activityContainer.html"></div>
+        <div class="activities_container_filtros" id="activities_container_filtros"></div>
+        <div class="activities_container_activity" id="activities_container_activity"></div>
     </section>
 
-    <footer id="main_footer" w3-include-html="./views/footer.html"></footer>
+    <footer id="main_footer"></footer>
 
-    <script>
-        w3IncludeHTML();
-    </script>
+    <script src="./js/activitiesList.js"></script>
     <!-- Importante que el script del header se llame despues de cargar el header -->
     <script src="js/header.js"></script>
 
