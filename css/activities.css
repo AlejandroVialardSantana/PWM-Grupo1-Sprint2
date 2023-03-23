@@ -2,7 +2,7 @@
 .destinies_caroussel {
     transform: scale(0.5);
 }
-*/
+
 
 .destinies_caroussel_items {
     flex-direction: row;
@@ -17,7 +17,7 @@
 .destinies_caroussel_button {
     display: none;
 }
-
+*/
 
 .activities_container {
     display: flex;
