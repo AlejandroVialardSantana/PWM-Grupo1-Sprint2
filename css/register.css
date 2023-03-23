@@ -64,6 +64,15 @@ label{
     justify-content: center;
     align-items: center;
 }
+
+#password-error{
+    font-size: 14px;
+    color: red;
+    padding-left: 0.5rem;
+    margin: 0.5rem auto;
+    font-weight: bolder;
+}
+
 .sign_up:hover{
     border-bottom: 0.1rem solid #A0B1AC;
     background-color: white;
