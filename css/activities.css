@@ -4,6 +4,21 @@
 }
 */
 
+.destinies_caroussel_items {
+    flex-direction: row;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.destinies_caroussel_item {
+    height: 15rem;
+}
+
+.destinies_caroussel_button {
+    display: none;
+}
+
+
 .activities_container {
     display: flex;
     justify-content: center;
