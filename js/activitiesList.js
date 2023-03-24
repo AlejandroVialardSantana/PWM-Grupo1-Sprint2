@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', init);
 
 const initialActivityContainerHeightInRem = 50;
+const offsetActivityContainerHeightInRem = 10;
+var actualActivityContainerHeightInRem = 0;
 
 function init() {
     loadTemplate('../views/header.html', 'main_header');
@@ -39,8 +41,38 @@ function init() {
             "35€"
         );
 
+        agregarActividad(
+            "Actividad 4",
+            "Descripción de la actividad 4",
+            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+            5,
+            "35€"
+        );
 
-        prueba();
+        agregarActividad(
+            "Actividad 5",
+            "Descripción de la actividad 5",
+            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+            5,
+            "35€"
+        );
+
+        agregarActividad(
+            "Actividad 6",
+            "Descripción de la actividad 6",
+            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+            4,
+            "35€"
+        );
+
+        agregarActividad(
+            "Actividad 7",
+            "Descripción de la actividad 7",
+            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
+            2,
+            "40€"
+        );
+
 
 
     });
@@ -127,13 +159,21 @@ function agregarActividad(nombre, descripcion, imagenUrl, numeroEstrellas, preci
 function setDefectActivityContainerHeightValue(){
     var activitiesContainer = document.querySelector(".activities_container");
     activitiesContainer.style.height = initialActivityContainerHeightInRem + "rem";
+
+    actualActivityContainerHeightInRem = 0;
 }
 
 /* Si el valor que añadimos supera el limite inicial de altura del contenedor de actividades, se añade la altura necesaria para que quepan todas las actividades */
 function tryAddActivityContainerHeight(valueToAddInRem){
-    var activitiesContainer = document.querySelector(".activities_container");
-    const actualContainerHeightInRem = parseFloat(activitiesContainer.style.height);
-    activitiesContainer.style.height = (actualContainerHeightInRem + valueToAddInRem) + "rem";
+    const activitiesContainer = document.querySelector(".activities_container");
+    const overlayContainer = document.querySelector(".overlay");
+
+    actualActivityContainerHeightInRem += valueToAddInRem;
+
+    if (actualActivityContainerHeightInRem  > (initialActivityContainerHeightInRem - offsetActivityContainerHeightInRem)){
+        activitiesContainer.style.height = (actualActivityContainerHeightInRem + offsetActivityContainerHeightInRem)+ "rem";
+        overlayContainer.style.height = (actualActivityContainerHeightInRem + offsetActivityContainerHeightInRem - 2)+ "rem";
+    }
 }
 
 /*
