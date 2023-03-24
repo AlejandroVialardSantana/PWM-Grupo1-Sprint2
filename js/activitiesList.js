@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', init);
 
+const initialActivityContainerHeightInRem = 50;
+
 function init() {
     loadTemplate('../views/header.html', 'main_header');
     loadTemplate('../views/footer.html', 'main_footer');
@@ -8,8 +10,13 @@ function init() {
     loadTemplate('../views/filtros.html', 'activities_container_filtros');
     loadTemplate('../views/activityContainer.html', 'activities_container_activity', function() {
 
+
+        setDefectActivityContainerHeightValue();
+        vaciarContenedorActividades();
+        /*mostrarMensajeBusquedaFallida();*/
+
         /* Agregamos las actividades */
-        /*
+
         agregarActividad(
             "Actividad 1",
             "Descripción de la actividad 1",
@@ -31,13 +38,22 @@ function init() {
             5,
             "35€"
         );
+
+
+        prueba();
+
+
     });
-    */
-    });
+
 
 }
 
+/*
+Esta función crea una nueva actividad con los valores pasados por parámetro
+ */
 function agregarActividad(nombre, descripcion, imagenUrl, numeroEstrellas, precio) {
+
+
     const maxEstrellas = 5;
     const contenedor = document.querySelector(".activity_container");
 
@@ -89,6 +105,54 @@ function agregarActividad(nombre, descripcion, imagenUrl, numeroEstrellas, preci
     contenidoBottom.appendChild(textoPrecio);
 
     contenedor.appendChild(box);
+
+    // Para que esto funcione debe haberse añadido al DOM!!
+    // Obtenemos el tamaño de 'box' usando 'getBoundingClientRect()'
+    const boxSize = box.getBoundingClientRect();
+
+    // Obtenemos el tamaño de fuente base del documento HTML
+    const fontSizeBase = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+    // Convertimos las dimensiones de 'box' de px a rem
+    //const boxWidthInRem = boxSize.width / fontSizeBase;
+    const boxHeightInRem = boxSize.height / fontSizeBase;
+
+    // Mostramos el tamaño de 'box' en rem en un alert
+
+    //alert(`Tamaño de 'box': {boxWidthInRem}rem, Alto = ${boxHeightInRem}rem`);
+    tryAddActivityContainerHeight(boxHeightInRem);
+
+}
+
+function setDefectActivityContainerHeightValue(){
+    var activitiesContainer = document.querySelector(".activities_container");
+    activitiesContainer.style.height = initialActivityContainerHeightInRem + "rem";
+}
+
+/* Si el valor que añadimos supera el limite inicial de altura del contenedor de actividades, se añade la altura necesaria para que quepan todas las actividades */
+function tryAddActivityContainerHeight(valueToAddInRem){
+    var activitiesContainer = document.querySelector(".activities_container");
+    const actualContainerHeightInRem = parseFloat(activitiesContainer.style.height);
+    activitiesContainer.style.height = (actualContainerHeightInRem + valueToAddInRem) + "rem";
+}
+
+/*
+Esta función muestra un mensaje de que no se han encontrado actividades
+ */
+
+function mostrarMensajeBusquedaFallida() {
+    const mensaje = `
+        <div id="activity_search_fail">
+            <h2>No se han encontrado actividades para los</h2>
+            <h2>parámetros de búsqueda seleccionados..</h2>
+            </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+            <h3>Pruebe con otra búsqueda :)</h3>
+        </div>`;
+    document.querySelector(".activity_container").innerHTML = mensaje;
+}
+
+function vaciarContenedorActividades() {
+    document.querySelector(".activity_container").innerHTML = "";
 }
 
 function loadTemplate(url, id, callback) {
