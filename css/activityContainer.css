@@ -56,6 +56,8 @@
 
 .five_stars i {
     font-size: 1rem; /* Cambiar el tamaño de fuente según sea necesario */
+    margin-right: 0.2rem; /* Separación entre las estrellas */
+
 }
 
 .activity_container_bottom {
