@@ -1,10 +1,10 @@
 {
-  "actividades": [
+  "activities": [
     {
       "id": "1",
       "name": "Roque Nublo",
       "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-      "image": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Roque-Nublo-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
+      "image": "https://www.grancanaria.com/blog/fileadmin/user_upload/Gran-Canaria-Roque-Nublo_05.jpg",
       "location": "Cumbre de Gran Canaria, Islas Canarias, España",
       "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
       "user_reviews": [
