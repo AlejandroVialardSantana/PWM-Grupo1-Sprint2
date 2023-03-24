@@ -3,9 +3,13 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
     loadTemplate('../views/header.html', 'main_header');
     loadTemplate('../views/footer.html', 'main_footer');
-    loadTemplate('../views/caroussel.html', 'caroussel_peninsula', function () {
-        carrusel();
+    loadTemplate('../views/caroussel.html', 'destinies_caroussel', function () {
+        carrusel('peninsula');
         destinosJSON('peninsula', 'Lugares en la Península');
+        carrusel('canarias');
+        destinosJSON('canarias', 'Lugares en las Islas Canarias');
+        carrusel('baleares');
+        destinosJSON('baleares', 'Lugares en las Islas Baleares');
     });
 }
 
@@ -20,17 +24,17 @@ function loadTemplate(url, id, callback) {
         });
 }
 
-function carrusel() {
-    const buttonPrev = document.getElementById('button_prev');
-    const buttonNext = document.getElementById('button_next');
+function carrusel(id) {
+    const buttonPrev = document.getElementById(`button_prev_${id}`);
+    const buttonNext = document.getElementById(`button_next_${id}`);
 
     buttonPrev.onclick = () => Move(1);
     buttonNext.onclick = () => Move(2);
 
     function Move(value) {
-        const track = document.getElementById('track');
-        const slickList = document.getElementById('slick_list');
-        const slick = document.querySelectorAll('.slick');
+        const track = document.getElementById(`track_${id}`);
+        const slickList = document.getElementById(`slick_list_${id}`);
+        const slick = document.querySelectorAll(`.slick_${id}`);
 
         var style = window.getComputedStyle(slick[0]);
         var marginRight = parseInt(style.marginRight);
@@ -58,8 +62,8 @@ function destinosJSON(place, title) {
     fetch('../json/destinos.json')
         .then(response => response.json())
         .then(data => {
-            const carousselTitle = document.getElementById('carousel_title');
-            const track = document.getElementById('track');
+            const carousselTitle = document.getElementById(`carousel_title_${place}`);
+            const track = document.getElementById(`track_${place}`);
             const placeJSON = data[place];
             
             carousselTitle.innerHTML = title;
@@ -67,9 +71,9 @@ function destinosJSON(place, title) {
             placeJSON.forEach((element, index) => {
                 const numStars = element.stars;
                 const imageName = element.image.replace(/ /g, '%20');
-                const starsId = `stars-${index}`; // Crear un ID único para el contenedor de estrellas
+                const starsId = `stars-${index}_${place}`; // Crear un ID único para el contenedor de estrellas
                 track.innerHTML += `
-                    <div class="slick" id="slick">
+                    <div class="slick_${place}" id="slick">
                         <img src="${imageName}" alt="${element.name}" id="image">
                         <div class="destinies_caroussel_item_info">
                             <h3 id="name">${element.name}</h3>
