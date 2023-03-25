@@ -25,7 +25,6 @@
     color: #000;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    margin-top: 2.75rem;
     text-align: center;
 }
 
@@ -106,6 +105,11 @@
 #slick .destinies_caroussel_item_info i {
     font-size: 1.1rem;
     margin-right: 0.5rem;
+}
+
+#slick .destinies_caroussel_item_info p {
+    margin-bottom: 0;
+    font-size: 1.25rem;
 }
 
 /* buttons */

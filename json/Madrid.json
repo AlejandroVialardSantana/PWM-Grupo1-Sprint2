@@ -6,40 +6,48 @@
       "description": "El Parque del Retiro es un gran parque público situado en el centro de Madrid, España. Es un oasis de tranquilidad y belleza en medio del bullicio de la ciudad.",
       "image": "https://pequeviajes.com/wp-content/uploads/2018/12/parque-del-retiro.jpg",
       "location": "Plaza de la Independencia, 7, 28001 Madrid, España",
+      "city": "Madrid",
       "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+      "category": [
+        "aire libre",
+        "ocio",
+        "destacado"
+      ],
       "user_reviews": [
         {
-          "username": "Maria88",
+          "username": "Maria Cardenes",
           "opinion": "Me encanta el Parque del Retiro, es un lugar hermoso para relajarse y disfrutar del aire libre. Los jardines son espectaculares y hay muchas actividades para hacer."
         },
         {
-          "username": "JuanPablo",
+          "username": "Juan Pablo",
           "opinion": "El Parque del Retiro es uno de mis lugares favoritos en Madrid. Es ideal para ir a correr, hacer picnics, pasear en bote, y muchas cosas más. Definitivamente lo recomiendo."
         },
         {
-          "username": "AnaGarcia",
+          "username": "Ana Garcia",
           "opinion": "Si visitas Madrid, no puedes perderte el Parque del Retiro. Es un oasis de paz en medio de la ciudad, con lagos, fuentes, y muchos rincones hermosos para explorar."
         }
       ]
     },
     {
       "id": "2",
-      "name": "Museo del Prado",
+      "name": "Museo de El Prado",
       "description": "El Museo del Prado es el museo nacional de arte de España. Es uno de los museos más importantes del mundo y alberga una de las colecciones de arte más importantes del mundo.",
-      "image": "https://www.museodelprado.es/imagenes/visita/visita-1.jpg",
+      "image": "https://cdn-imgix.headout.com/tour/33875/TOUR-IMAGE/60a88161-1bee-4e24-931a-55e66ddd11fa-17737-madrid-madrid-s-prado-museum-guided-tour---tapas-experience-02.jpeg",
       "location": "Paseo del Prado, s/n, 28014 Madrid, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+      "city": "Madrid",
+      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12151.106713994022!2d-3.700881864711925!3d40.413797807399604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289d66d8a2ed%3A0x1094f07d93ad885a!2sMuseo%20Nacional%20del%20Prado!5e0!3m2!1ses!2ses!4v1679766879345!5m2!1ses!2ses",
+      "category": [
+        "cultura",
+        "ocio",
+        "arte"
+      ],
       "user_reviews": [
         {
-          "username": "Maria88",
+          "username": "Maria Cardenes",
           "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
         },
         {
-          "username": "JuanPablo",
-          "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-        },
-        {
-          "username": "AnaGarcia",
+          "username": "Juan Pablo",
           "opinion": "El Museo del Prado es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
         }
       ]
@@ -48,14 +56,17 @@
       "id": "3",
       "name": "Museo Nacional Centro de Arte Reina Sofía",
       "description": "El Museo Nacional Centro de Arte Reina Sofía es un museo de arte contemporáneo situado en Madrid, España. Es uno de los museos más importantes del mundo.",
-      "image": "https://www.museoreinasofia.es/sites/default/files/styles/imagen_principal_1200x675/public/2019-10/20191015_1.jpg?itok=8Z8Z7Z7Z",
+      "image": "https://static2.museoreinasofia.es/sites/default/files/snippet_museo_sede_principal_5.png",
       "location": "Calle de Santa Isabel, 52, 28012 Madrid, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+      "city": "Madrid",
+      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152.166561953229!2d-3.703311664714567!3d40.40792830883556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422628db3a07bd%3A0x309814d159babf71!2sMuseo%20Nacional%20Centro%20de%20Arte%20Reina%20Sof%C3%ADa!5e0!3m2!1ses!2ses!4v1679767002686!5m2!1ses!2ses",
+      "category": [
+        "cultura",
+        "ocio",
+        "arte",
+        "aire libre"
+      ],
       "user_reviews": [
-        {
-          "username": "Maria88",
-          "opinion": "El Museo Nacional Centro de Arte Reina Sofía es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-        },
         {
           "username": "JuanPablo",
           "opinion": "El Museo Nacional Centro de Arte Reina Sofía es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
@@ -69,21 +80,24 @@
     {
       "id": "4",
       "name": "Museo Thyssen-Bornemisza",
-      "description": "El Museo Thyssen-Bornemisza es un museo de arte situado en Madrid, España. Es uno de los museos más importantes del mundo.",
-      "image": "https://www.museothyssen.org/sites/default/files/styles/imagen_principal_1200x675/public/2019-10/20191015_1.jpg?itok=8Z8Z7Z7Z",
+      "description": "Ubicado en el Paseo del Arte, su colección permanente traza la historia de la pintura europea desde la Edad Media hasta finales del siglo XX. Los primitivos italianos, el Renacimiento alemán, la pintura americana del XIX, el impresionismo, el expresionismo alemán y el constructivismo ruso son las escuelas y los movimientos más ampliamente representados en el museo.",
+      "image": "https://www.revistadearte.com/wp-content/uploads/2022/10/El-Museo-Nacional-Thyssen-Bornemisza-cumple-30-anos-con-un-fin-de-semana-de-actividades-y-puertas-abiertas.jpg",
       "location": "Paseo del Prado, 8, 28014 Madrid, España",
+      "city": "Madrid",
       "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+      "category": [
+        "cultura",
+        "aire libre",
+        "ocio",
+        "arte"
+      ],
       "user_reviews": [
         {
-          "username": "Maria88",
+          "username": "Pepe Santana",
           "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
         },
         {
-          "username": "JuanPablo",
-          "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
-        },
-        {
-          "username": "AnaGarcia",
+          "username": "Ana Garcia",
           "opinion": "El Museo Thyssen-Bornemisza es uno de los mejores museos del mundo. Tiene una colección increíble de arte español e internacional. Definitivamente lo recomiendo."
         }
       ]
@@ -91,22 +105,24 @@
     {
       "id": "5",
       "name": "Estadio Santiago Bernabéu",
-      "description": "El Estadio Santiago Bernabéu es un estadio de fútbol situado en Madrid, España. Es uno de los estadios más importantes del mundo.",
-      "image": "https://www.realmadrid.com/img/estadio/estadio-bernabeu-1.jpg",
+      "description": "El Estadio Santiago Bernabéu es un recinto deportivo propiedad del Real Madrid Club de Fútbol, situado en pleno paseo de la Castellana, en el distrito de Chamartín de Madrid, España. Se inauguró el 14 de diciembre de 1947 y su aforo actualmente es de 81044 espectadores. ​El estadio está catalogado por la UEFA con la máxima distinción, «estadio de élite».",
+      "image": "https://tierradelsur.net/wp-content/uploads/2022/01/mad-santiagobernabeu-01.jpg",
       "location": "Avenida de Concha Espina, 1, 28036 Madrid, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6075.538173832227!2d-3.6867884233037795!3d40.413965967461635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1677576348767!5m2!1ses!2ses",
+      "city": "Madrid",
+      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044399792423!2d-3.6883337!3d40.45303869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1679767249007!5m2!1ses!2ses",
+      "category": [
+        "deporte",
+        "aire libre",
+        "destacado"
+      ],
       "user_reviews": [
         {
-          "username": "Maria88",
+          "username": "Juan Pablo",
           "opinion": "El Estadio Santiago Bernabéu es uno de los mejores estadios del mundo. Tiene una capacidad increíble de 81.044 espectadores. Definitivamente lo recomiendo."
         },
         {
-          "username": "JuanPablo",
-          "opinion": "El Estadio Santiago Bernabéu es uno de los mejores estadios del mundo. Tiene una capacidad increíble de 81.044 espectadores. Definitivamente lo recomiendo."
-        },
-        {
-          "username": "AnaGarcia",
-          "opinion": "El Estadio Santiago Bernabéu es uno de los mejores estadios del mundo. Tiene una capacidad increíble de 81.044 espectadores. Definitivamente lo recomiendo."
+          "username": "Ana Garcia",
+          "opinion": "Impresionante."
         }
       ]
     }

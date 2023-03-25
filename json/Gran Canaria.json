@@ -2,22 +2,29 @@
   "activities": [
     {
       "id": "1",
-      "name": "Roque Nublo",
+      "name": "Monumento natural del Roque Nublo",
       "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
       "image": "https://www.grancanaria.com/blog/fileadmin/user_upload/Gran-Canaria-Roque-Nublo_05.jpg",
       "location": "Cumbre de Gran Canaria, Islas Canarias, España",
+      "city": "Gran Canaria",
       "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
+      "category": [
+        "naturaleza",
+        "aventura",
+        "aire libre",
+        "destacado"	
+      ],
       "user_reviews": [
         {
-          "username": "MartaGarcia",
+          "username": "Marta Garcia",
           "opinion": "Roque Nublo es una de las vistas más impresionantes que he visto en mi vida. La caminata hasta la cumbre es exigente, pero las vistas desde arriba hacen que todo valga la pena. Sin duda, uno de los mejores lugares de Gran Canaria."
         },
         {
-          "username": "JuanMartinez",
+          "username": "Juan Martinez",
           "opinion": "Roque Nublo es un lugar mágico que te hace sentir como si estuvieras en otro mundo. La vista desde la cumbre es impresionante y la caminata hasta allí es una aventura en sí misma. ¡Muy recomendable!"
         },
         {
-          "username": "LuisaFernandez",
+          "username": "Luisa Fernandez",
           "opinion": "Roque Nublo es uno de los lugares más espectaculares de Gran Canaria. La caminata hasta la cumbre es desafiante, pero las vistas desde allí son simplemente impresionantes. Definitivamente vale la pena visitarlo."
         }
       ]
@@ -25,88 +32,106 @@
     {
       "id": "2",
       "name": "Playa de Maspalomas",
-      "description": "La Playa de Maspalomas es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-      "image": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Playa-de-Maspalomas-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
-      "location": "Sur de Gran Canaria, Islas Canarias, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
+      "description": "La Playa de Maspalomas es una playa de arena blanca con dunas situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+      "image": "https://canaryislandsinfo.co.uk/wp-content/uploads/2017/03/Playa-de-Maspalomas.jpg",
+      "location": "San Bartolomé de Tirajana, Islas Canarias, España",
+      "city": "Gran Canaria",
+      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56502.15654646265!2d-15.619046448181845!3d27.736275411553393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc3f62d63f61e66f%3A0x274721dbf09e4820!2sPlaya%20de%20Maspalomas%20(Maspalomas)!5e0!3m2!1ses!2ses!4v1679763619498!5m2!1ses!2ses",
+      "category": [
+        "naturaleza",
+        "playa",
+        "aire libre"
+      ],
       "user_reviews": [
         {
-          "username": "MartaGarcia",
-          "opinion": "La Playa de Maspalomas es una de las playas más bonitas que he visto en mi vida. La caminata hasta la playa es exigente, pero las vistas desde arriba hacen que todo valga la pena. Sin duda, uno de los mejores lugares de Gran Canaria."
+          "username": "Marta Garcia",
+          "opinion": "La Playa de Maspalomas es una de las playas más bonitas que he visto en mi vida. La arena blanca y las dunas hacen que el lugar sea mágico. Sin duda, uno de los mejores lugares de Gran Canaria"
         },
         {
-          "username": "JuanMartinez",
-          "opinion": "La Playa de Maspalomas es un lugar mágico que te hace sentir como si estuvieras en otro mundo. La vista desde la playa es impresionante y la caminata hasta allí es una aventura en sí misma. ¡Muy recomendable!"
+          "username": "Juan Martinez",
+          "opinion": "La Playa de Maspalomas es un lugar hermoso que te hace sentir como si estuvieras en otro mundo. ¡Muy recomendable!"
         },
         {
-          "username": "LuisaFernandez",
-          "opinion": "La Playa de Maspalomas es uno de los lugares más espectaculares de Gran Canaria. La caminata hasta la playa es desafiante, pero las vistas desde allí son simplemente impresionantes. Definitivamente vale la pena visitarlo."
+          "username": "Luisa Fernandez",
+          "opinion": "La Playa de Maspalomas es uno de los lugares más espectaculares de Gran Canaria. Definitivamente vale la pena visitarlo."
         }
       ]
     },
     {
       "id": "3",
       "name": "Playa de Las Canteras",
-      "description": "La Playa de Las Canteras es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-      "image": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Playa-de-Las-Canteras-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
-      "location": "Sur de Gran Canaria, Islas Canarias, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
+      "description": "La playa de Las Canteras es la playa favorita de los vecinos de la ciudad. Considerada una de las mejores playas urbanas de Europa. Las Canteras fue seleccionada en 2019 entre las diez mejores playas de España por la comunidad de viajeros de Tripadvisor. Con buenas condiciones climáticas prácticamente durante todo el año, la playa de Las Canteras cuenta con un paseo marítimo lleno de lugares de ocio que llenan de vida la ciudad. Sus aguas reúnen las condiciones perfectas para realizar cualquier deporte náutico, especialmente el surf, donde sus olas de gran calidad son reconocidas por surfistas de todo el mundo.",
+      "image": "https://www.tegustaviajar.com/wp-content/uploads/2019/02/playa-de-las-canteras.jpg",
+      "location": "Las Palmas de Gran Canaria, Islas Canarias, España",
+      "city": "Gran Canaria",
+      "category": [
+        "naturaleza",
+        "playa",
+        "aire libre",
+        "destacado"
+      ],
+      "location_map": "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14072.909278428073!2d-15.44807551818952!3d28.13956727183625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc409517c01f9539%3A0x3c117022b0a58f31!2sPlaya%20de%20Las%20Canteras%20(Las%20Palmas%20de%20Gran%20Canaria)!5e0!3m2!1ses!2ses!4v1679763909783!5m2!1ses!2ses",
       "user_reviews": [
         {
-          "username": "MartaGarcia",
-          "opinion": "La Playa de Las Canteras es una de las playas más bonitas que he visto en mi vida. La caminata hasta la playa es exigente, pero las vistas desde arriba hacen que todo valga la pena. Sin duda, uno de los mejores lugares de Gran Canaria."
+          "username": "Marta Garcia",
+          "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable"
         },
         {
-          "username": "JuanMartinez",
-          "opinion": "La Playa de Las Canteras es un lugar mágico que te hace sentir como si estuvieras en otro mundo. La vista desde la playa es impresionante y la caminata hasta allí es una aventura en sí misma. ¡Muy recomendable!"
+          "username": "Juan Martinez",
+          "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable"
         },
         {
-          "username": "LuisaFernandez",
-          "opinion": "La Playa de Las Canteras es uno de los lugares más espectaculares de Gran Canaria. La caminata hasta la playa es desafiante, pero las vistas desde allí son simplemente impresionantes. Definitivamente vale la pena visitarlo."
+          "username": "Luisa Fernandez",
+          "opinion": "Espectacular playa, el paseo estupendo y cerca del centro comercial. Muy recomendable"
         }
       ]
     },
     {
       "id": "4",
       "name": "Playa de Amadores",
-      "description": "La Playa de Amadores es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
-      "image": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Playa-de-Amadores-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
-      "location": "Sur de Gran Canaria, Islas Canarias, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
+      "description": "En el suroeste de la isla de Gran Canaria hay una playa tranquila creada para descansar bajo el sol. Es la playa de Amadores, de aguas en calma y sin oleaje al estar protegida por dos diques. Sus suaves arenas blancas y doradas invitan a tomar el sol todo el día tumbados en una hamaca o flotar durante horas en una orilla de aguas cristalinas, ya que aquí no están permitidos ni la música ni los juegos de pelota. Y con la llegada de la tarde, nada como ver desde la misma hamaca al sol ocultarse lentamente tras la isla vecina de Tenerife.",
+      "image": "https://fotos.hoteles.net/articulos/playa-amadores-gran-canaria-4229-1.jpg",
+      "location": "Mogán, Gran Canaria, Islas Canarias, España",
+      "city": "Gran Canaria",
+      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.6460638057156!2d-15.727102634936156!3d27.789877832757828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4081b41e4f27b9%3A0xa73fcf80b6a80e71!2sPlaya%20de%20Amadores!5e0!3m2!1ses!2ses!4v1679764826613!5m2!1ses!2ses",
+      "category": [
+        "naturaleza",
+        "playa",
+        "aire libre"
+      ],
       "user_reviews": [
         {
-          "username": "MartaGarcia",
-          "opinion": "La Playa de Amadores es una de las playas más bonitas que he visto en mi vida. La caminata hasta la playa es exigente, pero las vistas desde arriba hacen que todo valga la pena. Sin duda, uno de los mejores lugares de Gran Canaria."
+          "username": "Marta Garcia",
+          "opinion": "Frecuento está playa desde hace 5 años. Agua azul turquesa cristalina.En mi opinión una de las playas más bonitas de la isla. Muy justa,su bandera azul."
         },
         {
-          "username": "JuanMartinez",
-          "opinion": "La Playa de Amadores es un lugar mágico que te hace sentir como si estuvieras en otro mundo. La vista desde la playa es impresionante y la caminata hasta allí es una aventura en sí misma. ¡Muy recomendable!"
-        },
-        {
-          "username": "LuisaFernandez",
-          "opinion": "La Playa de Amadores es uno de los lugares más espectaculares de Gran Canaria. La caminata hasta la playa es desafiante, pero las vistas desde allí son simplemente impresionantes. Definitivamente vale la pena visitarlo."
+          "username": "Juan Martinez",
+          "opinion": "Es muy buena playa. Cuando el agua está verde, no es otra cosa que debido a las altas temperaturas y unas algas especiales que tiene sus fondos pues el agua toma ese color. Por lo demás es espectacular. Bien llevada su bandera azul."
         }
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Caldera de Bandama",
-      "description": "La Caldera de Bandama es un cráter volcánico situado en el municipio de San Bartolomé de Tirajana, en la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los lugares más visitados de la isla debido a su belleza natural y a su importancia cultural para los habitantes de la isla.",
-      "image": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Caldera-de-Bandama-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
-      "location": "Sur de Gran Canaria, Islas Canarias, España",
-      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.890564223336!2d-15.630078784951202!3d27.97379958266906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40dd209d51a805%3A0x9cb58d28fd3a1a57!2sRoque%20Nublo!5e0!3m2!1sen!2ses!4v1678624746216!5m2!1sen!2ses",
+      "description": "La caldera de Bandama es un Espacio Natural Protegido, el ejemplo más espectacular de vulcanismo reciente en Gran Canaria. Una estructura que se formó hace 5000 años, junto al antiguo volcán del Pico de Bandama. Originada por una enorme explosión de carácter freatomagmático (cuando la lava entra en contacto con aguas subterráneas), sus valores geológicos son incalculables, ya que sus paredes muestran claramente diversas etapas del vulcanismo insular.",
+      "image": "https://fotos.hoteles.net/articulos/caldera-bandama-gran-canaria-6117-1.jpg",
+      "location": "Noroeste de Gran Canaria, Islas Canarias, España",
+      "city": "Gran Canaria",
+      "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14086.981466014051!2d-15.464757218227625!3d28.032257472533637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4096f815da0baf%3A0x5c97ea1ddc5c4f03!2sCaldera%20de%20Bandama!5e0!3m2!1ses!2ses!4v1679765057227!5m2!1ses!2ses",
+      "category": [
+        "naturaleza",
+        "sendero",
+        "aire libre",
+        "destacado"
+      ],
       "user_reviews": [
         {
-          "username": "MartaGarcia",
-          "opinion": "La Caldera de Bandama es una de las playas más bonitas que he visto en mi vida. La caminata hasta la playa es exigente, pero las vistas desde arriba hacen que todo valga la pena. Sin duda, uno de los mejores lugares de Gran Canaria."
+          "username": "Marta Garcia",
+          "opinion": "Espectacular espacio, el sendero es muy bonito y la vista es impresionante. Muy recomendable."
         },
         {
-          "username": "JuanMartinez",
-          "opinion": "La Caldera de Bandama es un lugar mágico que te hace sentir como si estuvieras en otro mundo. La vista desde la playa es impresionante y la caminata hasta allí es una aventura en sí misma. ¡Muy recomendable!"
-        },
-        {
-          "username": "LuisaFernandez",
-          "opinion": "La Caldera de Bandama es uno de los lugares más espectaculares de Gran Canaria. La caminata hasta la playa es desafiante, pero las vistas desde allí son simplemente impresionantes. Definitivamente vale la pena visitarlo."
+          "username": "Juan Martinez",
+          "opinion": "Visita muy recomendable."
         }
       ]
     }

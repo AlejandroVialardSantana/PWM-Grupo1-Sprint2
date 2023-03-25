@@ -122,3 +122,9 @@
         height: 1.5rem;
     }
 }
+
+@media (min-width: 2000px) {
+    .home_container {
+        min-height: 35rem;
+    }
+}
