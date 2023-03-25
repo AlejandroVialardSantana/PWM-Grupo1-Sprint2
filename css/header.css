@@ -252,7 +252,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 }
 
 /* 440 o menos de esto quitar el icono de idioma y situarlo en el desplegable */
-@media (max-width: 440px), (max-height: 440px) {
+@media (max-width: 480px), (max-height: 480px) {
 
     #idiom_menu_responsive {
         display: flex;
