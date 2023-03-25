@@ -33,6 +33,10 @@
     margin: 1rem 0;
 }
 
+.activity_description {
+    margin-top: 7rem;
+}
+
 .activity_description .activity_details {
     margin: 2rem auto;
     display: grid;
@@ -95,7 +99,7 @@
 .activity_description .activity_details .reviews .review {
     margin: 1rem auto;
     padding: 0.5rem 1rem;
-    background-color: #ccc;
+    background-color: #82a096;
     height: 50%;
     width: 100%;
     overflow: hidden;
@@ -169,6 +173,7 @@
 @media (max-width: 960px) {
     .activity_description .activity_details {
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .activity_description .activity_details .activity_location {
@@ -217,6 +222,9 @@
         margin-top: 0;
     }
 
+    .activity_description {
+        margin-top: 4rem;
+    }
 
     .activity_description .activity_details .reviews .review {
         height: 60%;
