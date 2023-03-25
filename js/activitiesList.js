@@ -18,11 +18,13 @@ function init() {
         }
 
         // Cargamos las actividades desde el JSON
-        loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json', searchInput, 5);
-/*
-        setDefectActivityContainerHeightValue();
-        vaciarContenedorActividades();
-        /*mostrarMensajeBusquedaFallida();*/
+        //loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json', searchInput, 5); para mi webstorm
+        loadActivitiesFromJson('../json/actividades.json', searchInput, 5);
+
+        /*
+                setDefectActivityContainerHeightValue();
+                vaciarContenedorActividades();
+                /*mostrarMensajeBusquedaFallida();*/
 
         /* Agregamos las actividades
 
@@ -44,7 +46,8 @@ function init() {
     function redirectToActivities() {
         const query = searchInput.value;
         if (query) {
-            window.location.href = `/PWM-Grupo1-Sprint2/activities.html?search=${encodeURIComponent(query)}`;
+            //window.location.href = `/PWM-Grupo1-Sprint2/activities.html?search=${encodeURIComponent(query)}`; para mi webstorm
+            window.location.href = `/activities.html?search=${encodeURIComponent(query)}`;
         }
     }
 
