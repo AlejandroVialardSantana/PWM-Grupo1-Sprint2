@@ -12,6 +12,27 @@
     margin-top: 0.625rem; /* Separación entre las cajas */
 }
 
+#max_activity_description_height {
+    max-height: 4rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #fff;
+    scroll-behavior: smooth;
+}
+
+/* Estilos para la barra de desplazamiento */
+div::-webkit-scrollbar {
+    width: 6px;
+}
+
+div::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
 .activity_container_box {
     display: flex;
     width: 50rem;
@@ -50,12 +71,12 @@
 }
 
 .activity_container_content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0.3125rem 0;
 }
 
 .five_stars i {
-    font-size: 1rem; /* Cambiar el tamaño de fuente según sea necesario */
+    font-size: 0.9rem; /* Cambiar el tamaño de fuente según sea necesario */
     margin-right: 0.2rem; /* Separación entre las estrellas */
 
 }
@@ -105,4 +126,24 @@ de landscape a portrait, aplicamos un pequeña redimensión y esto le lleva de n
     .activity_container_content {
         height: 8rem;
     }
+
+    .activity_container_content h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0.3125rem 0;
+    }
+
+    .activity_container_content p {
+        font-size: 1rem;
+        margin: 0.3125rem 0;
+    }
+
+    #max_activity_description_height {
+        max-height: 3rem;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #ccc #fff;
+        scroll-behavior: smooth;
+    }
+
 }

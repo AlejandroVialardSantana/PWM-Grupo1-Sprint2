@@ -12,12 +12,14 @@ function init() {
     loadTemplate('../views/filtros.html', 'activities_container_filtros');
     loadTemplate('../views/activityContainer.html', 'activities_container_activity', function() {
 
-
+        // Cargamos las actividades desde el JSON
+        loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json');
+/*
         setDefectActivityContainerHeightValue();
         vaciarContenedorActividades();
         /*mostrarMensajeBusquedaFallida();*/
 
-        /* Agregamos las actividades */
+        /* Agregamos las actividades
 
         agregarActividad(
             "Actividad 1",
@@ -71,13 +73,35 @@ function init() {
             "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
             2,
             "40€"
-        );
+        )
+
+        */
 
 
 
     });
 
 
+}
+
+function loadActivitiesFromJson(route) {
+    fetch(route)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            data.activities.forEach(activity => {
+                agregarActividad(
+                    activity.nombre,
+                    activity.descripcion,
+                    activity.imagen_url,
+                    activity.estrellas,
+                    activity.precio
+                );
+            });
+        })
+        .catch(error => {
+            console.error('Error en la carga de actividades desde JSON:', error);
+        });
 }
 
 /*
@@ -113,9 +137,13 @@ function agregarActividad(nombre, descripcion, imagenUrl, numeroEstrellas, preci
     titulo.textContent = nombre;
     contenidoTop.appendChild(titulo);
 
+    const limitadorDeAltura = document.createElement("div");
+    limitadorDeAltura.id = "max_activity_description_height";
+    contenidoTop.appendChild(limitadorDeAltura);
+
     const textoDescripcion = document.createElement("p");
     textoDescripcion.textContent = descripcion;
-    contenidoTop.appendChild(textoDescripcion);
+    limitadorDeAltura.appendChild(textoDescripcion);
 
     const contenidoBottom = document.createElement("div");
     contenidoBottom.className = "activity_container_bottom";
