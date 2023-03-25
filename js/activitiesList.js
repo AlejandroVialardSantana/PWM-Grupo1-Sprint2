@@ -7,8 +7,6 @@ var actualActivityContainerHeightInRem = 0;
 function init() {
     loadTemplate('../views/header.html', 'main_header');
     loadTemplate('../views/footer.html', 'main_footer');
-    loadTemplate('../views/searchBar.html', 'home');
-    loadTemplate('../views/destiniesCaroussel.html', 'destinies_caroussel');
     loadTemplate('../views/filtros.html', 'activities_container_filtros');
     loadTemplate('../views/activityContainer.html', 'activities_container_activity', function() {
 
@@ -38,6 +36,31 @@ function init() {
         */
 
     });
+
+    // Preparamos los eventos para el boton y el campo de búsqueda
+    const searchInput = document.getElementById('activities_search_input');
+    const searchButton = document.getElementById('activities_search_button');
+
+    function redirectToActivities() {
+        const query = searchInput.value;
+        if (query) {
+            window.location.href = `/PWM-Grupo1-Sprint2/activities.html?search=${encodeURIComponent(query)}`;
+        }
+    }
+
+    searchButton.addEventListener('click', redirectToActivities);
+    searchInput.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            redirectToActivities();
+        }
+    });
+
+    //Si ya hemos realizado una búsqueda, establecemos el valor escrito anteriormente en el editbox
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParamValue = urlParams.get('search');
+    if (searchParamValue !== null) {
+        searchInput.value = searchParamValue;
+    }
 
 }
 

@@ -9,7 +9,7 @@
     justify-content: center;
     padding-top: 2rem;
     gap: 3rem;
-    background-color: #b9cbc5;
+    background-color: #ffffff;
     height: 60rem;
 }
 
@@ -50,6 +50,10 @@
     transition: 0.2s;
 }
 
+/* Para nuestro uso nos viene mejor que la barra de búsqueda sea un poco más grande */
+.home_container{
+    height: 30rem;
+}
 
 @media (max-width: 750px) and (orientation: portrait) {
     .activities_container_filtros {
