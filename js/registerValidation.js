@@ -18,12 +18,20 @@ function registerNewUser() {
           icon: "error",
         });
       } else {
+        const newUser = {nombre, apellido, email, contraseña};
+        const users = JSON.parse(localStorage.getItem("user")) || [];
+        users.push(newUser);
+        localStorage.setItem("usuario", JSON.stringify(newUser))
+        localStorage.setItem('nombreUsuario', newUser.nombre);
+        localStorage.setItem('apellidoUsuario', newUser.apellido);
+        localStorage.setItem('emailUsuario', newUser.email);
+        window.location.href = '../index.html';
         fetch("http://localhost:3000/users", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ nombre, apellido, email, contraseña }),
+          body: JSON.stringify(newUser),
         })
           .then((response) => response.json())
           .then((data) => {
