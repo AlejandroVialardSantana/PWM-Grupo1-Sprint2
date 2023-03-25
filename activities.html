@@ -31,14 +31,17 @@
 <body>
 
     <header id="main_header">
-    <!-- <object data="/views/header.html" type="text/html"></object> -->
     </header>
 
-    <section class="home_container" id="home"></section>
-    
-    <div class="body_container">
-        <section class="destinies_caroussel" id="destinies_caroussel"></section>
-    </div>
+    <section class="home_container">
+        <div class="home_content">
+            <h1 id="home_phrase">¿Que te gustaría hacer?</h1>
+            <div class="search_bar">
+                <input type="text" id="activities_search_input" placeholder="Elige tu actividad...">
+                <button class="search_button" id="activities_search_button" type="submit"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+    </section>
 
     <section class="activities_container">
         <input type="checkbox" id="filter_toggle">

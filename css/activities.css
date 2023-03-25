@@ -2,21 +2,6 @@
 .destinies_caroussel {
     transform: scale(0.5);
 }
-
-
-.destinies_caroussel_items {
-    flex-direction: row;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.destinies_caroussel_item {
-    height: 15rem;
-}
-
-.destinies_caroussel_button {
-    display: none;
-}
 */
 
 .activities_container {
@@ -24,8 +9,8 @@
     justify-content: center;
     padding-top: 2rem;
     gap: 3rem;
-    background-color: #b9cbc5;
-    height: 65rem;
+    background-color: #ffffff;
+    height: 60rem;
 }
 
 #filter_toggle {
@@ -65,6 +50,10 @@
     transition: 0.2s;
 }
 
+/* Para nuestro uso nos viene mejor que la barra de búsqueda sea un poco más grande */
+.home_container{
+    height: 30rem;
+}
 
 @media (max-width: 750px) and (orientation: portrait) {
     .activities_container_filtros {
@@ -90,11 +79,11 @@
     }
 
     .activities_container{
-        height: 50rem;
+        height: 45rem;
     }
 
     .overlay{
-        height: 48rem;
+        height: 43rem;
     }
 
 }
