@@ -3,11 +3,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     max-width: 120rem;
     margin: 0 auto;
     position: relative;
 }
+
 .activity_container_box:not(:first-child) {
     margin-top: 0.625rem; /* Separación entre las cajas */
 }
@@ -103,6 +104,18 @@ de landscape a portrait, aplicamos un pequeña redimensión y esto le lleva de n
 @media (max-width: 1190px), (orientation: portrait) and (max-height: 1190px) {
     .activity_container_box{
         width: calc(65vw * 0.85);
+    }
+}
+
+@media (max-width: 1005px){
+    .activity_container_content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 850px){
+    .activity_container_content h3 {
+        font-size: 1.2rem;
     }
 }
 
