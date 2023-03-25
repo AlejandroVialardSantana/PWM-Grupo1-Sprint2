@@ -1,17 +1,19 @@
 .home_container {
     position: relative;
     background-color: #87A49B;
-    height: 15rem;
+    height: 27rem;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background: url(../images/Vector.svg) repeat center center;
+    background-size: cover; 
 }
 
 .home_container .home_content {
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -118,5 +120,11 @@
     .search_bar button {
         width: 1.5rem;
         height: 1.5rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .home_container {
+        min-height: 35rem;
     }
 }
