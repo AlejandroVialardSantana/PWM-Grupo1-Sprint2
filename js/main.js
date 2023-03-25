@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", init);
+document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    loadTemplate('../views/header.html', 'main_header', ()=>logedIn());
+    loadTemplate('../views/header.html', 'main_header', () => logedIn());
     loadTemplate('../views/footer.html', 'main_footer');
     loadTemplate('../views/searchBar.html', 'home');
-    loadTemplate("../views/accountManagSections.html", "account_management", ()=>userInformation());
+    loadTemplate("../views/accountManagSections.html", "account_management", () => userInformation());
     loadTemplate('../views/caroussel.html', 'destinies_caroussel', function () {
         loadDestinies('../json/destinos.json', '1', 'Destinos destacados', function () {
             waitForElements('.slick_1', carrusel.bind(this, '1'));
@@ -14,22 +14,22 @@ function init() {
         loadDestiniesRecommendations('2', 'destacado', 'Lugares más visitados', function () {
             waitForElements('.slick_2', carrusel.bind(this, '2'));
             waitForElements('.slick_2', clickActivity.bind(this, '2'));
-            loadDestiniesRecommendations('3', 'aire libre', 'Actividades al aire libre', function () {
-                waitForElements('.slick_3', carrusel.bind(this, '3'));
-                waitForElements('.slick_3', clickActivity.bind(this, '3'));
-                loadDestiniesRecommendations('4', 'playa', 'Playas destacadas', function () {
-                    waitForElements('.slick_4', carrusel.bind(this, '4'));
-                    waitForElements('.slick_4', clickActivity.bind(this, '4'));
-                });
-            });
+        });
+        loadDestiniesRecommendations('3', 'aire libre', 'Actividades al aire libre', function () {
+            waitForElements('.slick_3', carrusel.bind(this, '3'));
+            waitForElements('.slick_3', clickActivity.bind(this, '3'));
+        });
+        loadDestiniesRecommendations('4', 'playa', 'Playas destacadas', function () {
+            waitForElements('.slick_4', carrusel.bind(this, '4'));
+            waitForElements('.slick_4', clickActivity.bind(this, '4'));
         });
     });
 }
 
 function clickActivity(id) {
-    const activities = document.querySelectorAll(` .slick_${id}`);
-    activities.forEach(function(activity) {
-        activity.addEventListener('click', function() {
+    const activities = document.querySelectorAll(`.slick_${id}`);
+    activities.forEach(function (activity) {
+        activity.addEventListener('click', function () {
             const cityName = activity.querySelector('.destinies_caroussel_item_info p').textContent;
             const activityName = activity.querySelector('.destinies_caroussel_item_info h4').textContent;
 
@@ -50,78 +50,15 @@ function waitForElements(selector, callback) {
 }
 
 function loadTemplate(url, id, callback) {
-  fetch(url)
-    .then((response) => response.text())
-    .then((data) => {
-      const element = document.getElementById(id);
-      if(element){
-          element.innerHTML = data;
-          if (callback) {
-            callback();
-          }
-      } else {
-        console.error(`Element with id "${id}" not found`);
-      }
-    })
-    .catch(error => {
-        console.error(`Error loading template from ${url}`, error);
-    });
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+            if (callback) {
+                callback();
+            }
+        });
 }
-
-
-function clickActivity() {
-  const items = document.querySelectorAll(".most_visited_destinations_item");
-
-  items.forEach(function (item) {
-    item.addEventListener("click", function () {
-      const cityName = item.querySelector(
-        ".most_visited_destinations_item_info p"
-      ).textContent;
-      const activityName = item.querySelector(
-        ".most_visited_destinations_item_info h4"
-      ).textContent;
-
-      const url = `/activityDescription.html?location=${encodeURIComponent(
-        cityName
-      )}&name=${encodeURIComponent(activityName)}`;
-      window.location.href = url;
-    });
-  });
-}
-
-function logedIn(){
-  const usuario = JSON.parse(localStorage.getItem('usuario'));
-  if(usuario){
-    const headerDropdown = document.querySelector('.bi-person .dropdown_content');
-    if (headerDropdown) {
-      headerDropdown.innerHTML =`
-      <a href="../accountManagement.html">Perfil</a>
-      <a href="../myActivityList.html">Mis actividades</a>
-      <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>`
-
-    }
-  }
-  
-}
-
-function cerrarSesion() {
-  localStorage.removeItem("usuario");
-  window.location.href = "../index.html";
-}
-
-function userInformation() {
-    const nombre_usuario = localStorage.getItem('nombreUsuario');
-    const spanName = document.querySelector('#nombreUsuario');
-    spanName.innerHTML = `<span>${nombre_usuario}</span>`;
-
-    const apellido_usuario = localStorage.getItem('apellidoUsuario');
-    const spanApellido = document.querySelector('#apellidoUsuario');
-    spanApellido.innerHTML = `<span>${apellido_usuario}</span>`;
-
-    const email_usuario = localStorage.getItem('emailUsuario');
-    const spanEmail = document.querySelector('#emailUsuario');
-    spanEmail.innerHTML = `<span>${email_usuario}</span>`;
-};
 
 function carrusel(id, callback) {
     const buttonPrev = document.getElementById('button_prev_' + id);
@@ -241,7 +178,7 @@ async function loadAllDestinies(destiniesUrls, category) {
 }
 
 function loadDestiniesRecommendations(id, category, title, callback) {
-    const destiniesUrls = ['../json/Madrid.json', '../json/Málaga.json', '../json/Gran Canaria.json', '../json/Barcelona.json', ];
+    const destiniesUrls = ['../json/Madrid.json', '../json/Málaga.json', '../json/Gran Canaria.json', '../json/Barcelona.json',];
 
     loadAllDestinies(destiniesUrls, category).then(allDestinies => {
         const randomDestinies = getRandomDestinies(allDestinies, 6);
@@ -279,3 +216,36 @@ function loadDestiniesRecommendations(id, category, title, callback) {
         }
     }).catch(error => console.error(error));
 }
+
+function logedIn() {
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (usuario) {
+        const headerDropdown = document.querySelector('.bi-person .dropdown_content');
+        if (headerDropdown) {
+            headerDropdown.innerHTML = `
+        <a href="../accountManagement.html">Perfil</a>
+        <a href="../myActivityList.html">Mis actividades</a>
+        <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>`
+
+        }
+    }
+}
+
+function cerrarSesion() {
+    localStorage.removeItem("usuario");
+    window.location.href = "../index.html";
+}
+
+function userInformation() {
+    const nombre_usuario = localStorage.getItem('nombreUsuario');
+    const spanName = document.querySelector('#nombreUsuario');
+    spanName.innerHTML = `<span>${nombre_usuario}</span>`;
+
+    const apellido_usuario = localStorage.getItem('apellidoUsuario');
+    const spanApellido = document.querySelector('#apellidoUsuario');
+    spanApellido.innerHTML = `<span>${apellido_usuario}</span>`;
+
+    const email_usuario = localStorage.getItem('emailUsuario');
+    const spanEmail = document.querySelector('#emailUsuario');
+    spanEmail.innerHTML = `<span>${email_usuario}</span>`;
+};

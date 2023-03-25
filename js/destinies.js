@@ -5,17 +5,17 @@ function init() {
     loadTemplate('../views/footer.html', 'main_footer');
     loadTemplate('../views/caroussel.html', 'destinies_caroussel_peninsula', function () {
         loadDestinies('../json/destinos.json', 'peninsula', 'Lugares en la Península', function () {
-            waitForElements('.slick_peninsula', carrusel.bind(this, 'peninsula', 'carousel_title_container_peninsula'));
+            waitForElements('.slick_peninsula', carrusel.bind(this, 'peninsula'));
         });
     });
     loadTemplate('../views/caroussel.html', 'destinies_caroussel_canarias', function () {
         loadDestinies('../json/destinos.json', 'canarias', 'Lugares en las Islas Canarias', function () {
-            waitForElements('.slick_canarias', carrusel.bind(this, 'canarias', 'carousel_title_container_canarias'));
+            waitForElements('.slick_canarias', carrusel.bind(this, 'canarias'));
         });
     });
     loadTemplate('../views/caroussel.html', 'destinies_caroussel_baleares', function () {
         loadDestinies('../json/destinos.json', 'baleares', 'Lugares en las Islas Baleares', function () {
-            waitForElements('.slick_baleares', carrusel.bind(this, 'baleares', 'carousel_title_container_baleares'));
+            waitForElements('.slick_baleares', carrusel.bind(this, 'baleares'));
         });
     });
 }
