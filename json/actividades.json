@@ -1,0 +1,186 @@
+{
+  "activities": [
+    {
+      "nombre": "Visita a la Sagrada Familia, Barcelona",
+      "descripcion": "Descubre la majestuosidad de la Basílica de la Sagrada Familia en esta visita inolvidable.",
+      "imagen_url": "https://images.pexels.com/photos/1661007/pexels-photo-1661007.jpeg",
+      "estrellas": 4,
+      "precio": "35€"
+    },
+    {
+      "nombre": "Visita al Parque Güell, Barcelona",
+      "descripcion": "Recorre los jardines y edificios de Gaudí en una visita guiada a este impresionante parque.",
+      "imagen_url": "https://images.pexels.com/photos/4171534/pexels-photo-4171534.jpeg",
+      "estrellas": 3,
+      "precio": "20€"
+    },
+    {
+      "nombre": "Roque Nublo, Cumbre de Gran Canaria",
+      "descripcion": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+      "imagen_url": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Roque-Nublo-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
+      "estrellas": 5,
+      "precio": "Gratis"
+    },
+    {
+      "nombre": "Playa de Maspalomas, Sur de Gran Canaria",
+      "descripcion": "La Playa de Maspalomas es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+      "imagen_url": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Playa-de-Maspalomas-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
+      "estrellas": 4,
+      "precio": "Gratis"
+    },
+    {
+      "nombre": "Playa de Las Canteras, Sur de Gran Canaria",
+      "descripcion": "La Playa de Las Canteras es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+      "imagen_url": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Playa-de-Las-Canteras-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
+      "estrellas": 4,
+      "precio": "Gratis"
+    },
+    {
+      "nombre": "Playa de Amadores, Sur de Gran Canaria",
+      "descripcion": "La Playa de Amadores es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+      "imagen_url": "https://www.holaislascanarias.com/wp-content/uploads/2016/06/Playa-de-Amadores-Gran-Canaria.-Vista-nocturna.-750x350.jpg",
+      "estrellas": 3,
+      "precio": "Gratis"
+    },
+    {
+      "nombre": "Parque de El Retiro, Madrid",
+      "descripcion": "El Parque del Retiro es un gran parque público situado en el centro de Madrid, España. Es un oasis de tranquilidad y belleza en medio del bullicio de la ciudad.",
+      "imagen_url": "https://pequeviajes.com/wp-content/uploads/2018/12/parque-del-retiro.jpg",
+      "estrellas": 4,
+      "precio": "Gratis"
+    },
+    {
+      "nombre": "Museo del Prado, Madrid",
+      "descripcion": "El Museo del Prado es el museo nacional de arte de España. Es uno de los museos más importantes del mundo y alberga una de las colecciones de arte más importantes del mundo.",
+      "imagen_url": "https://www.museodelprado.es/imagenes/visita/visita-1.jpg",
+      "estrellas": 5,
+      "precio": "20€"
+    },
+    {
+      "nombre": "Museo Reina Sofía, Madrid",
+      "descripcion": "El Museo Nacional Centro de Arte Reina Sofía es un museo de arte contemporáneo situado en Madrid, España. Es uno de los museos más importantes del mundo.",
+      "imagen_url": "https://www.museoreinasofia.es/sites/default/files/styles/imagen_principal_1200x675/public/2019-10/20191015_1.jpg?itok=8Z8Z7Z7Z",
+      "estrellas": 4,
+      "precio": "15€"
+    },
+    {
+      "nombre": "Museo Thyssen-Bornemisza, Madrid",
+      "descripcion": "El Museo Thyssen-Bornemisza es un museo de arte situado en Madrid, España. Es uno de los museos más importantes del mundo.",
+      "imagen_url": "https://www.museothyssen.org/sites/default/files/styles/imagen_principal_1200x675/public/2019-10/20191015_1.jpg?itok=8Z8Z7Z7Z",
+      "estrellas": 5,
+      "precio": "20€"
+    },
+    {
+      "nombre": "Estadio Santiago Bernabéu, Madrid",
+      "descripcion": "El Estadio Santiago Bernabéu es un estadio de fútbol situado en Madrid, España. Es uno de los estadios más importantes del mundo.",
+      "imagen_url": "https://www.realmadrid.com/img/estadio/estadio-bernabeu-1.jpg",
+      "estrellas": 4,
+      "precio": "15€"
+    },
+    {
+      "nombre": "Caminito del Rey, Málaga",
+      "descripcion": "Sendero situado en el Desfiladero de los Gaitanes, conocido por su impresionante paisaje y su peligrosidad",
+      "imagen_url": "https://i.promecal.es/IMG/2022/B8C0CD2F-B6C6-B0D4-A00F79992601CD2C.JPEG",
+      "estrellas": 4,
+      "precio": "10€"
+    },
+    {
+      "nombre": "Centro Pompidou Málaga, Málaga",
+      "descripcion": "Museo de arte moderno y contemporáneo ubicado en el Puerto de Málaga, con una colección permanente de obras de artistas como Picasso, Miró y Chagall, así como exposiciones temporales de artistas contemporáneos",
+      "imagen_url": "https://www.centrepompidou-malaga.eu/wp-content/uploads/2021/06/home-1.jpg",
+      "estrellas": 5,
+      "precio": "8€"
+    },
+    {
+      "nombre": "Catedral de Málaga, Málaga",
+      "descripcion": "Catedral católica situada en el centro de la ciudad de Málaga, España, construida en el siglo XVI y una de las más grandes de España",
+      "imagen_url": "https://www.visitacostadelsol.com/images/catedralmalaga/IMG_20190720_110000.jpg",
+      "estrellas": 4,
+      "precio": "5€"
+    },
+    {
+      "nombre": "Alcazaba de Málaga, Málaga",
+      "descripcion": "Castillo árabe situado en la ciudad de Málaga, España, una de las mejores muestras de la arquitectura árabe en España",
+      "imagen_url": "https://www.visitacostadelsol.com/images/alcazaba/IMG_20190720_110000.jpg",
+      "estrellas": 3,
+      "precio": "6€"
+    },
+    {
+      "nombre": "Castillo de Gibralfaro, Málaga",
+      "descripcion": "Castillo situado en la ciudad de Málaga, España, una de las mejores muestras de la arquitectura árabe en España",
+      "imagen_url": "https://www.visitacostadelsol.com/images/castillogibralfaro/IMG_20190720_110000.jpg",
+      "estrellas": 3,
+      "precio": "7€"
+    },
+    {
+      "nombre": "Tour por el Casco Antiguo, Córdoba",
+      "descripcion": "Explora el encantador casco antiguo de Córdoba, con sus calles estrechas y plazas llenas de historia.",
+      "imagen_url": "https://example.com/cordoba-casco-antiguo.jpg",
+      "estrellas": 4,
+      "precio": "25€"
+    },
+    {
+      "nombre": "Paseo en Barco, Valencia",
+      "descripcion": "Disfruta de un relajante paseo en barco por la costa de Valencia, contemplando sus playas y el horizonte.",
+      "imagen_url": "https://example.com/valencia-paseo-barco.jpg",
+      "estrellas": 3,
+      "precio": "30€"
+    },
+    {
+      "nombre": "Degustación de Vinos, La Rioja",
+      "descripcion": "Descubre los sabores de La Rioja en una experiencia de degustación de vinos en una bodega local.",
+      "imagen_url": "https://example.com/la-rioja-degustacion-vinos.jpg",
+      "estrellas": 5,
+      "precio": "40€"
+    },
+    {
+      "nombre": "Visita al Acuario, Gijón",
+      "descripcion": "Sumérgete en el fascinante mundo submarino en el Acuario de Gijón, hogar de numerosas especies marinas.",
+      "imagen_url": "https://example.com/gijon-acuario.jpg",
+      "estrellas": 4,
+      "precio": "18€"
+    },
+    {
+      "nombre": "Excursión al Parque Nacional de Ordesa, Huesca",
+      "descripcion": "Maravíllate con la espectacular naturaleza del Parque Nacional de Ordesa y Monte Perdido en una excursión guiada.",
+      "imagen_url": "https://example.com/ordesa-parque-nacional.jpg",
+      "estrellas": 5,
+      "precio": "45€"
+    },
+    {
+      "nombre": "Recorrido en Autobús Turístico, Murcia",
+      "descripcion": "Conoce Murcia desde un autobús turístico con paradas en los principales puntos de interés de la ciudad.",
+      "imagen_url": "https://example.com/murcia-autobus-turistico.jpg",
+      "estrellas": 2,
+      "precio": "15€"
+    },
+    {
+      "nombre": "Alquiler de Bicicletas, Salamanca",
+      "descripcion": "Alquila una bicicleta y explora Salamanca a tu propio ritmo, descubriendo sus monumentos y rincones escondidos.",
+      "imagen_url": "https://example.com/salamanca-bicicletas.jpg",
+      "estrellas": 2,
+      "precio": "10€"
+    },
+    {
+      "nombre": "Museo del Automóvil, Valladolid",
+      "descripcion": "Visita el pequeño museo del automóvil de Valladolid y descubre la historia de los vehículos a través de los años.",
+      "imagen_url": "https://example.com/valladolid-museo-automovil.jpg",
+      "estrellas": 1,
+      "precio": "8€"
+    },
+    {
+      "nombre": "Paseo en Barca de Remos, Santander",
+      "descripcion": "Disfruta de un paseo en una barca de remos en el lago del parque de Santander, una actividad sencilla y tranquila.",
+      "imagen_url": "https://example.com/santander-barca-remos.jpg",
+      "estrellas": 1,
+      "precio": "5€"
+    },
+    {
+      "nombre": "Visita al Parque de Atracciones, Zaragoza",
+      "descripcion": "Pasa un día en un pequeño parque de atracciones en Zaragoza, con atracciones limitadas y adecuadas para niños pequeños.",
+      "imagen_url": "https://example.com/zaragoza-parque-atracciones.jpg",
+      "estrellas": 2,
+      "precio": "12€"
+    }
+  ]
+}
