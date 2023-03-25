@@ -252,7 +252,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 }
 
 /* 440 o menos de esto quitar el icono de idioma y situarlo en el desplegable */
-@media (max-width: 480px), (max-height: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
 
     #idiom_menu_responsive {
         display: flex;
@@ -278,7 +278,7 @@ Diseños para el menu desplegable de la barra de navegación cuando se aplique e
 }
 
 /* 440 o menos de esto quitar el icono de idioma y situarlo en el desplegable */
-@media (max-width: 330px), (max-height: 330px){
+@media (max-width: 330px) and (orientation: portrait){
 
     :root{
         --scale_value: 0.85;
