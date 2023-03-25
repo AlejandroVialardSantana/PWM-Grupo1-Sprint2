@@ -15,28 +15,28 @@
       "precio": "20€"
     },
     {
-      "nombre": "Roque Nublo, Cumbre de Gran Canaria",
+      "nombre": "Roque Nublo, Gran Canaria",
       "descripcion": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
       "imagen_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Roque_nublo.jpg",
       "estrellas": 5,
       "precio": "Gratis"
     },
     {
-      "nombre": "Playa de Maspalomas, Sur de Gran Canaria",
+      "nombre": "Playa de Maspalomas, Gran Canaria",
       "descripcion": "La Playa de Maspalomas es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
       "imagen_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/8a/05/d2/playa-de-ingles-maspalomas.jpg?w=1200&h=1200&s=1",
       "estrellas": 4,
       "precio": "Gratis"
     },
     {
-      "nombre": "Playa de Las Canteras, Sur de Gran Canaria",
+      "nombre": "Playa de Las Canteras, Gran Canaria",
       "descripcion": "La Playa de Las Canteras es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
       "imagen_url": "https://www.grancanaria.com/turismo/fileadmin/_processed_/csm_Las_Canteras_02_7cac71214f.jpg",
       "estrellas": 4,
       "precio": "Gratis"
     },
     {
-      "nombre": "Playa de Amadores, Sur de Gran Canaria",
+      "nombre": "Playa de Amadores, Gran Canaria",
       "descripcion": "La Playa de Amadores es una playa de arena blanca situada en el sur de la isla de Gran Canaria, en las Islas Canarias, España. Es una de las playas más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
       "imagen_url": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/07/playa-amadores.jpg",
       "estrellas": 3,
@@ -87,7 +87,7 @@
     {
       "nombre": "Centro Pompidou Málaga, Málaga",
       "descripcion": "Museo de arte moderno y contemporáneo ubicado en el Puerto de Málaga, con una colección permanente de obras de artistas como Picasso, Miró y Chagall, así como exposiciones temporales de artistas contemporáneos",
-      "imagen_url": "https://www.centrepompidou-malaga.eu/wp-content/uploads/2021/06/home-1.jpg",
+      "imagen_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a4/61/77/haven.jpg?w=1200&h=1200&s=1",
       "estrellas": 5,
       "precio": "8€"
     },
