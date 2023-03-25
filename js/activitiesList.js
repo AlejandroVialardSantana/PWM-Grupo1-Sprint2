@@ -12,8 +12,15 @@ function init() {
     loadTemplate('../views/filtros.html', 'activities_container_filtros');
     loadTemplate('../views/activityContainer.html', 'activities_container_activity', function() {
 
+        var searchInput = "";
+        const urlParams = new URLSearchParams(window.location.search);
+        const search = urlParams.get('search');
+        if (search !== null) {
+            searchInput = search;
+        }
+
         // Cargamos las actividades desde el JSON
-        loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json', 's', 5);
+        loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json', searchInput, 5);
 /*
         setDefectActivityContainerHeightValue();
         vaciarContenedorActividades();
@@ -28,59 +35,9 @@ function init() {
             2,
             "15€"
         );
-        agregarActividad(
-            "Actividad 2",
-            "Descripción de la actividad 2",
-            "https://via.placeholder.com/150x150",
-            3,
-            "20€"
-        );
-        agregarActividad(
-            "Actividad 3",
-            "Descripción de la actividad 3",
-            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-            5,
-            "35€"
-        );
-
-        agregarActividad(
-            "Actividad 4",
-            "Descripción de la actividad 4",
-            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-            5,
-            "35€"
-        );
-
-        agregarActividad(
-            "Actividad 5",
-            "Descripción de la actividad 5",
-            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-            5,
-            "35€"
-        );
-
-        agregarActividad(
-            "Actividad 6",
-            "Descripción de la actividad 6",
-            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-            4,
-            "35€"
-        );
-
-        agregarActividad(
-            "Actividad 7",
-            "Descripción de la actividad 7",
-            "https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg",
-            2,
-            "40€"
-        )
-
         */
 
-
-
     });
-
 
 }
 
@@ -92,6 +49,12 @@ function loadActivitiesFromJson(route, searchTerm, maxResults) {
             let filteredActivities = data.activities.filter(activity => {
                 return activity.nombre.toLowerCase().startsWith(searchTerm.toLowerCase());
             });
+
+            //Si no hay actividades que coincidan con el término de búsqueda, mostramos un mensaje de error
+            if (filteredActivities.length === 0) {
+                mostrarMensajeBusquedaFallida();
+                return;
+            }
 
             let addedActivities = 0;
             for (const activity of filteredActivities) {
