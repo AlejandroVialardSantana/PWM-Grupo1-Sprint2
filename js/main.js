@@ -98,6 +98,7 @@ function logedIn(){
       <a href="../accountManagement.html">Perfil</a>
       <a href="../myActivityList.html">Mis actividades</a>
       <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>`
+
     }
   }
   
