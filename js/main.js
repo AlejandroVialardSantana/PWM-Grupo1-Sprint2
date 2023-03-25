@@ -97,7 +97,8 @@ function logedIn(){
       headerDropdown.innerHTML =`
       <a href="../accountManagement.html">Perfil</a>
       <a href="../myActivityList.html">Mis actividades</a>
-      <a onclick="cerrarSesion()">Cerrar sesión</a>`
+      <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>`
+
     }
   }
   
@@ -278,4 +279,3 @@ function loadDestiniesRecommendations(id, category, title, callback) {
         }
     }).catch(error => console.error(error));
 }
-
