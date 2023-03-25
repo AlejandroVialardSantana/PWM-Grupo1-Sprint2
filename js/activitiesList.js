@@ -13,7 +13,7 @@ function init() {
     loadTemplate('../views/activityContainer.html', 'activities_container_activity', function() {
 
         // Cargamos las actividades desde el JSON
-        loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json');
+        loadActivitiesFromJson('http://localhost:63342/PWM-Grupo1-Sprint2/json/actividades.json', 's', 5);
 /*
         setDefectActivityContainerHeightValue();
         vaciarContenedorActividades();
@@ -84,12 +84,21 @@ function init() {
 
 }
 
-function loadActivitiesFromJson(route) {
+function loadActivitiesFromJson(route, searchTerm, maxResults) {
     fetch(route)
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            data.activities.forEach(activity => {
+            let filteredActivities = data.activities.filter(activity => {
+                return activity.nombre.toLowerCase().startsWith(searchTerm.toLowerCase());
+            });
+
+            let addedActivities = 0;
+            for (const activity of filteredActivities) {
+                if (addedActivities >= maxResults) {
+                    break;
+                }
+
                 agregarActividad(
                     activity.nombre,
                     activity.descripcion,
@@ -97,12 +106,14 @@ function loadActivitiesFromJson(route) {
                     activity.estrellas,
                     activity.precio
                 );
-            });
+                addedActivities++;
+            }
         })
         .catch(error => {
             console.error('Error en la carga de actividades desde JSON:', error);
         });
 }
+
 
 /*
 Esta función crea una nueva actividad con los valores pasados por parámetro
@@ -165,7 +176,7 @@ function agregarActividad(nombre, descripcion, imagenUrl, numeroEstrellas, preci
     contenidoBottom.appendChild(textoPrecio);
 
     contenedor.appendChild(box);
-
+    /*
     // Para que esto funcione debe haberse añadido al DOM!!
     // Obtenemos el tamaño de 'box' usando 'getBoundingClientRect()'
     const boxSize = box.getBoundingClientRect();
@@ -181,7 +192,7 @@ function agregarActividad(nombre, descripcion, imagenUrl, numeroEstrellas, preci
 
     //alert(`Tamaño de 'box': {boxWidthInRem}rem, Alto = ${boxHeightInRem}rem`);
     tryAddActivityContainerHeight(boxHeightInRem);
-
+    */
 }
 
 function setDefectActivityContainerHeightValue(){

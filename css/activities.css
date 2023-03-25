@@ -2,21 +2,6 @@
 .destinies_caroussel {
     transform: scale(0.5);
 }
-
-
-.destinies_caroussel_items {
-    flex-direction: row;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.destinies_caroussel_item {
-    height: 15rem;
-}
-
-.destinies_caroussel_button {
-    display: none;
-}
 */
 
 .activities_container {
@@ -25,7 +10,7 @@
     padding-top: 2rem;
     gap: 3rem;
     background-color: #b9cbc5;
-    height: 50rem;
+    height: 60rem;
 }
 
 #filter_toggle {
@@ -90,7 +75,11 @@
     }
 
     .activities_container{
-        height: 50rem;
+        height: 45rem;
+    }
+
+    .overlay{
+        height: 43rem;
     }
 
 }
