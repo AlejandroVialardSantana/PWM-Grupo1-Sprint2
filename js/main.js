@@ -4,19 +4,36 @@ function init() {
     loadTemplate('../views/header.html', 'main_header');
     loadTemplate('../views/footer.html', 'main_footer');
     loadTemplate('../views/searchBar.html', 'home');
-    loadTemplate('../views/caroussel.html', 'destinies_caroussel', function() {
-        loadDestinies('../json/destinos.json', 'peninsula', 'Destinos destacados', function() {
-            waitForElements('.slick_peninsula', carrusel.bind(this, 'peninsula'));
+    loadTemplate('../views/caroussel.html', 'destinies_caroussel', function () {
+        loadDestinies('../json/destinos.json', '1', 'Destinos destacados', function () {
+            waitForElements('.slick_1', carrusel.bind(this, '1'));
         });
     });
-    loadTemplate('../views/destiniesRecommendations.html', 'destinies_recommendations', function() {
-        loadDestiniesRecommendations('../json/destinos.json', 'canarias', 'Lugares en Canarias', function() {
-            waitForElements('.slick_canarias', carrusel.bind(this, 'canarias'));
+    loadTemplate('../views/destiniesRecommendations.html', 'destinies_recommendations', function () {
+        loadDestiniesRecommendations('2', 'destacado', 'Lugares más visitados', function () {
+            waitForElements('.slick_2', carrusel.bind(this, '2'));
+            waitForElements('.slick_2', clickActivity.bind(this, '2'));
+            loadDestiniesRecommendations('3', 'aire libre', 'Actividades al aire libre', function () {
+                waitForElements('.slick_3', carrusel.bind(this, '3'));
+                waitForElements('.slick_3', clickActivity.bind(this, '3'));
+                loadDestiniesRecommendations('4', 'playa', 'Playas destacadas', function () {
+                    waitForElements('.slick_4', carrusel.bind(this, '4'));
+                    waitForElements('.slick_4', clickActivity.bind(this, '4'));
+                });
+            });
         });
     });
-    loadTemplate('../views/destiniesRecommendations.html', 'destinies_recommendations', function() {
-        loadDestiniesRecommendations('../json/destinos.json', 'baleares', 'Lugares en las Islas Baleares', function() {
-            waitForElements('.slick_baleares', carrusel.bind(this, 'baleares'));
+}
+
+function clickActivity(id) {
+    const activities = document.querySelectorAll(` .slick_${id}`);
+    activities.forEach(function(activity) {
+        activity.addEventListener('click', function() {
+            const cityName = activity.querySelector('.destinies_caroussel_item_info p').textContent;
+            const activityName = activity.querySelector('.destinies_caroussel_item_info h4').textContent;
+
+            const url = `/activityDescription.html?location=${encodeURIComponent(cityName)}&name=${encodeURIComponent(activityName)}`;
+            window.location.href = url;
         });
     });
 }
@@ -42,21 +59,7 @@ function loadTemplate(url, id, callback) {
         });
 }
 
-function clickActivity() {
-    const items = document.querySelectorAll('.most_visited_destinations_item');
-
-        items.forEach(function(item) {
-            item.addEventListener('click', function() {
-                const cityName = item.querySelector('.most_visited_destinations_item_info p').textContent;
-                const activityName = item.querySelector('.most_visited_destinations_item_info h4').textContent;
-
-                const url = `/activityDescription.html?location=${encodeURIComponent(cityName)}&name=${encodeURIComponent(activityName)}`;
-                window.location.href = url;
-            });
-        });
-}
-
-function carrusel(id) {
+function carrusel(id, callback) {
     const buttonPrev = document.getElementById('button_prev_' + id);
     const buttonNext = document.getElementById('button_next_' + id);
 
@@ -88,33 +91,53 @@ function carrusel(id) {
             track.style.left = `${-1 * (trackWidth - slickListWidth)}px`;
         }
     }
+
+    if (callback) {
+        callback();
+    }
 }
 
-function loadDestinies(url, place, title, callback) {
+function getRandomDestinies(destinies, numDestinies) {
+    const randomDestinies = [];
+    if (destinies.length < numDestinies) {
+        numDestinies = destinies.length;
+    }
+
+    for (let i = 0; i < numDestinies; i++) {
+        const randomIndex = Math.floor(Math.random() * destinies.length);
+        randomDestinies.push(destinies[randomIndex]);
+        destinies.splice(randomIndex, 1);
+    }
+    return randomDestinies;
+}
+
+function loadDestinies(url, id, title, callback) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const placeJSON = data[place];
+            const allDestinies = data.peninsula.concat(data.baleares, data.canarias);
+            const fourOrMoreStarsDestinies = allDestinies.filter(destiny => destiny.stars >= 4);
+            const randomDestinies = getRandomDestinies(fourOrMoreStarsDestinies, 6);
             const destiniesCaroussel = document.getElementById('div_caroussel');
-            
+
             destiniesCaroussel.innerHTML += `
-                <div class="carousel_title_container" id="carousel_title_container_${place}">
-                <h3 class="carousel_title" id="carousel_title_${place}">${title}</h3>
-                <div class="slick_list" id="slick_list_${place}">
-                    <button class="slick_arrow slick_prev" id="button_prev_${place}"><i class="bi bi-chevron-left"></i></button>
-                    <div class="slick_track" id="track_${place}"></div>
-                    <button class="slick_arrow slick_next" id="button_next_${place}"><i class="bi bi-chevron-right"></i></button>
+                <div class="carousel_title_container" id="carousel_title_container_${id}">
+                <h3 class="carousel_title" id="carousel_title_${id}">${title}</h3>
+                <div class="slick_list" id="slick_list_${id}">
+                    <button class="slick_arrow slick_prev" id="button_prev_${id}"><i class="bi bi-chevron-left"></i></button>
+                    <div class="slick_track" id="track_${id}"></div>
+                    <button class="slick_arrow slick_next" id="button_next_${id}"><i class="bi bi-chevron-right"></i></button>
                 </div>
                 </div>
                 `;
 
-            placeJSON.forEach((element, index) => {
+            randomDestinies.forEach((element, index) => {
                 const numStars = element.stars;
                 const imageName = element.image.replace(/ /g, '%20');
-                const track = document.getElementById(`track_${place}`);
-                const starsId = `stars-${index}_${place}`; // Crear un ID único para el contenedor de estrellas
+                const track = document.getElementById(`track_${id}`);
+                const starsId = `stars-${index}_${title}`; // Crear un ID único para el contenedor de estrellas
                 track.innerHTML += `
-                    <div class="slick_${place}" id="slick">
+                    <div class="slick_${id}" id="slick">
                         <img src="${imageName}" alt="${element.name}" id="image">
                             <div class="destinies_caroussel_item_info">
                                 <h3 id="name">${element.name}</h3>
@@ -136,49 +159,59 @@ function loadDestinies(url, place, title, callback) {
         .catch(error => console.error(error));
 }
 
-function loadDestiniesRecommendations(url, place, title, callback) {
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            const placeJSON = data[place];
-            const destiniesCaroussel = document.getElementById('div_caroussel_recommendations');
-            
-            destiniesCaroussel.innerHTML += `
-                <div class="most_visited_destinations" id="most_visited_destinations">
-                    <h3 class="carousel_title" id="carousel_title_${place}">${title}</h3>
-                    <div class="line"></div>
-                    <div class="slick_list" id="slick_list_${place}">
-                        <button class="slick_arrow slick_prev" id="button_prev_${place}"><i class="bi bi-chevron-left"></i></button>
-                        <div class="slick_track" id="track_${place}"></div>
-                        <button class="slick_arrow slick_next" id="button_next_${place}"><i class="bi bi-chevron-right"></i></button>
-                    </div>
-                </div>
-                `;
+async function loadAllDestinies(destiniesUrls, category) {
+    const allDestinies = [];
+    const loadPromises = [];
 
-            placeJSON.forEach((element, index) => {
-                const numStars = element.stars;
-                const imageName = element.image.replace(/ /g, '%20');
-                const track = document.getElementById(`track_${place}`);
-                const starsId = `stars-${index}_${place}`; // Crear un ID único para el contenedor de estrellas
-                track.innerHTML += `
-                    <div class="slick_${place}" id="slick">
-                        <img src="${imageName}" alt="${element.name}" id="image">
-                            <div class="destinies_caroussel_item_info">
-                                <h3 id="name">${element.name}</h3>
-                                <div id="${starsId}" class="stars-container"></div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                for (let i = 0; i < numStars; i++) {
-                    const star = document.createElement('i');
-                    star.classList.add('bi', 'bi-star-fill');
-                    document.getElementById(starsId).appendChild(star); // Agregar las estrellas al contenedor correspondiente
-                }
-            });
-            if (callback) {
-                callback();
-            }
-        })
-        .catch(error => console.error(error));
+    destiniesUrls.forEach(destinyUrl => {
+        const loadPromise = fetch(destinyUrl)
+            .then(response => response.json())
+            .then(data => {
+                allDestinies.push(...data.activities.filter(activity => activity.category && activity.category.includes(category)));
+            })
+            .catch(error => console.error(error));
+        loadPromises.push(loadPromise);
+    });
+
+    return Promise.all(loadPromises).then(() => allDestinies);
+}
+
+function loadDestiniesRecommendations(id, category, title, callback) {
+    const destiniesUrls = ['../json/Madrid.json', '../json/Málaga.json', '../json/Gran Canaria.json', '../json/Barcelona.json', ];
+
+    loadAllDestinies(destiniesUrls, category).then(allDestinies => {
+        const randomDestinies = getRandomDestinies(allDestinies, 6);
+
+        const destiniesCaroussel = document.getElementById('div_caroussel_recommendations');
+        destiniesCaroussel.innerHTML += `
+        <div class="most_visited_destinations" id="most_visited_destinations">
+          <h3 class="carousel_title" id="carousel_title_${id}">${title}</h3>
+          <div class="line"></div>
+          <div class="slick_list" id="slick_list_${id}">
+            <button class="slick_arrow slick_prev" id="button_prev_${id}"><i class="bi bi-chevron-left"></i></button>
+            <div class="slick_track" id="track_${id}"></div>
+            <button class="slick_arrow slick_next" id="button_next_${id}"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+      `;
+
+        randomDestinies.forEach(element => {
+            const imageName = element.image.replace(/ /g, '%20');
+            const track = document.getElementById(`track_${id}`);
+
+            track.innerHTML += `
+          <div class="slick_${id}" id="slick">
+            <img src="${imageName}" alt="${element.name}" id="image">
+            <div class="destinies_caroussel_item_info">
+              <h4 id="name">${element.name}</h3>
+              <p id="city"><i class="bi bi-geo-alt"></i>${element.city}</p>
+            </div>
+          </div>
+        `;
+        });
+
+        if (callback) {
+            callback();
+        }
+    }).catch(error => console.error(error));
 }
