@@ -23,13 +23,17 @@ function loginValidation() {
             .then(function (data) {
                 let usuarioEncontrado = null;
                 let error = false;
-                for (let i = 0; i < data.length; i++) {
-                    if (data[i].email === email) {
-                        usuarioEncontrado = data[i];
+                for (let i = 0; i < data.users.length; i++) {
+                    if (data.users[i].email === email) {
+                        usuarioEncontrado = data.users[i];
                         break;
                     }
                 }
                 if (usuarioEncontrado && usuarioEncontrado.contraseña === contraseña) {
+                    localStorage.setItem('usuario', JSON.stringify(usuarioEncontrado));
+                    localStorage.setItem('nombreUsuario', usuarioEncontrado.nombre);
+                    localStorage.setItem('apellidoUsuario', usuarioEncontrado.apellido);
+                    localStorage.setItem('emailUsuario', usuarioEncontrado.email);
                     alert('Credenciales correctas. Bienvenido, ' + usuarioEncontrado.nombre + ' ' + usuarioEncontrado.apellido + '!');
                     window.location.href = '../index.html';
                 } else {
