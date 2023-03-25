@@ -3,9 +3,8 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    margin: 5rem;
+    margin: 8rem auto;
 }
-
 .field{
     padding: 1rem;
 }
@@ -104,4 +103,30 @@ form p {
 .googleBtn:hover {
     background-color: #86CFB5;
     cursor: pointer;
+}
+
+@media (max-width: 500px){
+    .button{
+    width: 15rem;
+    }
+
+    .googleBtn{
+        width: 15rem;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    #title_log{
+        font-size: 18px;
+    }
+    
+    .sign_up_field{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign_up_field label{
+        width: 8rem;
+    }
 }
