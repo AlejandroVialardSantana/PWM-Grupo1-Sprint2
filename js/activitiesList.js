@@ -72,11 +72,23 @@ function loadActivitiesFromJson(route, searchTerm, maxResults) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            let filteredActivities = data.activities.filter(activity => {
-                return activity.nombre.toLowerCase().startsWith(searchTerm.toLowerCase());
-            });
+            let filteredActivities;
 
-            //Si no hay actividades que coincidan con el término de búsqueda, mostramos un mensaje de error
+            if (searchTerm === '') {
+                // Si searchTerm está vacío, obtenemos actividades aleatorias
+                filteredActivities = [];
+                while (filteredActivities.length < maxResults && data.activities.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * data.activities.length);
+                    const randomActivity = data.activities.splice(randomIndex, 1)[0];
+                    filteredActivities.push(randomActivity);
+                }
+            } else {
+                filteredActivities = data.activities.filter(activity => {
+                    return activity.nombre.toLowerCase().startsWith(searchTerm.toLowerCase());
+                });
+            }
+
+            // Si no hay actividades que coincidan con el término de búsqueda, mostramos un mensaje de error
             if (filteredActivities.length === 0) {
                 mostrarMensajeBusquedaFallida();
                 return;
