@@ -1,0 +1,57 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Cala Macarella",
+            "description": "Situadas en la costa sur, Cala Maracarella y Cala Macarelleta son, gracias a sus aguas cristalinas de color turquesa y su ubicación entre imponentes acantilados, nuestras playas favoritas que ver en Menorca.",
+            "image": "https://www.artiemhotels.com/uploads/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9/e32e7681a52dd1e4df2bd746cfecb3c5/74cc7d56-ea32-4e85-8dd7-3bfff1d6f1e9.png",
+            "location": "Cala Macarella, 07769, Menorca, Islas Baleares, España",
+            "city": "Menorca",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.233733243826!2d3.9325761153813508!3d39.93616117942389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be1d12dc9c7a9b%3A0xad8e2dfbe699eb55!2sCala%20Macarelleta!5e0!3m2!1ses!2ses!4v1679823685116!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "playa",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Una preciosidad."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Hermoso lugar para pasar el día."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Fornells",
+            "description": "Fornells, un antiguo pueblo de pescadores situado en el norte de la isla, es uno de los pueblos que visitar en Menorca más bonitos. Después de dejar el coche en alguno de sus parkings públicos, puedes dar un paseo por su coqueto puerto y recorrer el Carrer de ses Escoles, con varias tiendas de souvenirs y restaurantes donde probar la famosa caldereta de langosta, el plato estrella de la isla, como Es Cranc, que es uno de nuestros restaurantes preferidos donde comer en Menorca.",
+            "image": "https://www.isoladiminorca.com/wp-content/uploads/2021/01/fornells.jpg",
+            "location": "Fornells, Menorca, Islas Baleares, España",
+            "city": "Menorca",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12215.67115178486!2d4.120210586838936!3d40.05493557053925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be233fa72ae2fd%3A0xa02af717f576020!2s07748%20Fornells%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679824230866!5m2!1ses!2ses",
+            "category": [
+                "paseo",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Un lugar muy bonito para visitar."
+                },
+                {
+                    "username": "Ana Lopez",
+                    "opinion": "Un pueblo muy bonito y tranquilo."
+                }
+            ]
+        }
+    ]
+}

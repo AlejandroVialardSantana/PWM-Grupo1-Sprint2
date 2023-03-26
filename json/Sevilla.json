@@ -1,0 +1,57 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "La Giralda",
+            "description": "La majestuosa torre almohade que corona la Catedral concentra 800 años de nuestra historia. Durante muchos años dominaba el skyline de la ciudad, con sus 101 metros, récord arrebatado por la Torre Sevilla. El Giraldillo es su orgullosa veleta, cuya réplica puede admirarse en la Puerta del Principe. Estudiantes, jubilados, parados y sevillanos pagan 1,50 euros si quieren vivir la experiencia de subir a su campanario.",
+            "image": "https://www.diariodesevilla.es/especiales/20-lugares-imprescindibles-de-sevilla/imagenes/catedral-sevilla_1285682100_89371889_2121x1414.jpg",
+            "location": "Av. de la Constitución, s/n, 41004 Sevilla, España",
+            "city": "Sevilla",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.154498771081!2d-5.994802384693491!3d37.386178379831996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1a1eb7d42b%3A0x9d4fd647e46b7247!2sLa%20Giralda!5e0!3m2!1ses!2ses!4v1679824763665!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Espectacular estructura, muy bonita."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Algo imprensindible de ver en Sevilla."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Teatro Flamenco Sevilla | Espectáculo Flamenco en Sevillanells",
+            "description": "Siente la magia del flamenco en primera persona, en el corazón de Andalucía. Sevilla es cuna de este arte andaluz, reconocido a nivel universal. Por eso, tienes que vivir con pasión, la esencia del flamenco más puro en la capital de Andalucía.",
+            "image": "https://lh5.googleusercontent.com/p/AF1QipMXuIic7dO1as0K_atYAC8yuJcsAFU1VapWxneb=w648-h240-k-no",
+            "location": "C. Cuna, 15, 41004 Sevilla",
+            "city": "Sevilla",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12680.1151070069!2d-6.00739566441828!3d37.389151727301936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d3202d4fab7%3A0x303d573893b7af30!2sTeatro%20Flamenco%20Sevilla%20%7C%20Espect%C3%A1culo%20Flamenco%20en%20Sevilla!5e0!3m2!1ses!2ses!4v1679824989178!5m2!1ses!2ses",
+            "category": [
+                "paseo",
+                "cultura",
+                "teatro",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Un espectáculo muy bonito y muy bien organizado."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "El flamenco es una de las cosas que más me gusta de Sevilla."
+                },
+                {
+                    "username": "Ana Lopez",
+                    "opinion": "Espectucular, no me lo esperaba."
+                }
+            ]
+        }
+    ]
+}

@@ -8,6 +8,7 @@ function init() {
     loadTemplate('../views/caroussel.html', 'destinies_caroussel', function () {
         loadDestinies('1', 'Más actividades en ', function () {
             waitForElements('.slick_1', carrusel.bind(this, '1'));
+            waitForElements('.slick_1', clickActivity.bind(this, '1'));
         });
     });
 }
@@ -66,6 +67,19 @@ function loadJSON(url, activityName, callback) {
 
             callback(data);
         });
+}
+
+function clickActivity(id) {
+    const activities = document.querySelectorAll(`.slick_${id}`);
+    activities.forEach(function (activity) {
+        activity.addEventListener('click', function () {
+            const cityName = activity.querySelector('.destinies_caroussel_item_info p').textContent;
+            const activityName = activity.querySelector('.destinies_caroussel_item_info h4').textContent;
+
+            const url = `/activityDescription.html?location=${encodeURIComponent(cityName)}&name=${encodeURIComponent(activityName)}`;
+            window.location.href = url;
+        });
+    });
 }
 
 function loadActivity() {

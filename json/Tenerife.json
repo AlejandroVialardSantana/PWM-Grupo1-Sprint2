@@ -1,0 +1,77 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Parque Nacional del Teide",
+            "description": "Este parque presenta, no solamente uno de los más impresionantes espectáculos geológicos del mundo, con su conjunto de coladas y conos volcánicos de caprichosas formas y armoniosos colores, sino que también atesora una extraordinaria biodiversidad formada por exclusivas especies de invertebrados y un amplio número de endemismos vegetales.",
+            "image": "https://images.squarespace-cdn.com/content/v1/5a86b05bcf81e0af04936cc7/1532097926690-M6NN972UUG734N6LGNJC/TEIDE3.jpg?format=1500w",
+            "location": "Pico del Teide, 38300, Santa Cruz de Tenerife, Islas Canarias, España",
+            "city": "Tenerife",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28110.860160594024!2d-16.66001761216535!3d28.27233683390549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a841219a46745%3A0x8da5b0b3d4897f14!2sPico%20del%20Teide!5e0!3m2!1ses!2ses!4v1679825462175!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Una preciosidad."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Hermoso lugar para pasar el día."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Loro Parque",
+            "description": "Zoo ajardinado con gorilas, tigres y pingüinos, iceberg artificial y espectáculos de delfines.",
+            "image": "https://www.atlanticoexcursiones.com/zeus/pictures/GRP3/B.jpg",
+            "location": "Loro Parque, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Islas Canarias, España",
+            "city": "Tenerife",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.362390742999!2d-16.56690558508207!3d28.408320082506783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a7fc6f1bca7a1%3A0x2d783f66b7a8b668!2sLoro%20Parque!5e0!3m2!1ses!2ses!4v1679825876994!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Miriam Suarez",
+                    "opinion": "Este lugar es un precioso paraíso para los animales. Todo está muy cuidado y limpio. Los animales están muy bien alimentados, de hecho tienes varias zonas para ver a los loros comer de cerca felizmente"
+                },
+                {
+                    "username": "Daniel PErez",
+                    "opinion": "Bonito lugar, bien cuidado, y perfecto para pasar un día con los peques. Los espectáculos están muy bien organizados y nos hemos divertido mucho."
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Playa de las Vistas",
+            "description": "La playa de Las Vistas es una playa artificial localizada en el sur de Tenerife. Es una de las playas que conforman la zona turística de Los Cristianos, en el término municipal de Arona.",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/fb/6a/d0/img-20190617-153600-largejpg.jpg?w=1200&h=-1&s=1",
+            "location": "Playa de las Vistas, 38650, Santa Cruz de Tenerife, Islas Canarias, España",
+            "city": "Tenerife",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.128741502386!2d-16.726790785090515!3d28.051093432650795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a978051f57119%3A0x63827795aed58c1!2sPlaya%20de%20las%20Vistas!5e0!3m2!1ses!2ses!4v1679826149719!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "playa",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Javier Ortega",
+                    "opinion": "Una playa bonita bastante concurrida, hay baños y para aparcar es muy complicado."
+                },
+                {
+                    "username": "Sara Hernandez",
+                    "opinion": "Esta playa es una de las más bonitas de Tenerife sur, es amplia de arena fina. "
+                }
+            ]
+        }
+    ]
+}

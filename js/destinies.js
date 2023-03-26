@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    loadTemplate('../views/header.html', 'main_header');
+    loadTemplate('../views/header.html', 'main_header', () => logedIn());
     loadTemplate('../views/footer.html', 'main_footer');
     loadTemplate('../views/caroussel.html', 'destinies_caroussel_peninsula', function () {
         loadDestinies('../json/destinos.json', 'peninsula', 'Lugares en la Península', function () {
@@ -120,4 +120,23 @@ function loadDestinies(url, place, title, callback) {
             }
         })
         .catch(error => console.error(error));
+}
+
+function logedIn() {
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (usuario) {
+        const headerDropdown = document.querySelector('.bi-person .dropdown_content');
+        if (headerDropdown) {
+            headerDropdown.innerHTML = `
+        <a href="../accountManagement.html">Perfil</a>
+        <a href="../myActivityList.html">Mis actividades</a>
+        <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>`
+
+        }
+    }
+}
+
+function cerrarSesion() {
+    localStorage.removeItem("usuario");
+    window.location.href = "../index.html";
 }
