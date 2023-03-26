@@ -80,7 +80,7 @@
     overflow: hidden;
 }
 
-.slick:hover img {
+#slick:hover img {
     transform: scale(1.1);
     cursor: pointer;
 }
