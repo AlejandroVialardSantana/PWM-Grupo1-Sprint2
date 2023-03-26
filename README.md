@@ -36,7 +36,7 @@ Si desea ver la implementación deL proyecto, puede acceder a él si hace click 
 
 * [![DerKom](https://img.shields.io/badge/-MarcosVazquezTascon-black?style=flat&logo=github)](https://github.com/DerKom)
 
-* [![anaMariaJimenezPerez](https://img.shields.io/badge/-AnaMariaJimenezPerez-black?style=flat&logo=github)](https://github.com/anaMariaJimenezPerez)
+* [![anaMariaJimenezPerez](https://img.shields.io/badge/-AnaMariaJimenezPerez-black?style=flat&logo=github)](https://github.com/anaMJimenezPerez)
 ---
 
 Desarrollado con ❤️ por **Grupo 41.1**
