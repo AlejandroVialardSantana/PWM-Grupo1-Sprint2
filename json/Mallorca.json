@@ -1,0 +1,57 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Porta Vells",
+            "description": "La playa de arena fina de Portals Vells goza de gran popularidad entre los residentes de Mallorca y grupos familiares. En las bahías arenosas con agua cristalina, hay numerosas cuevas por explorar. Hay un quiosco que ofrece bocadillos, un pequeño restaurante e instalaciones sanitarias. Muchos yates grandes visitan esta playa durante el verano. Sólo hay plazas limitadas de parking disponibles.",
+            "image": "https://abcmallorcastorage.blob.core.windows.net/images/2021/02/portals-vells-mallorca.jpg",
+            "location": "Calviá, Mallorca, Islas Baleares, España",
+            "city": "Mallorca",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.842645014567!2d2.5163563153674344!3d39.47288342948593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297889647f9b467%3A0xe12fd339048063ed!2sPortals%20Vells%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679821749408!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "playa",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Una preciosidad."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Hermoso lugar para pasar el día."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Pollensa",
+            "description": "Pollença es un pueblo antiguo ubicado en el norte de la isla, con atractivas calles estrechas y una impresionante plaza principal rodeada de cafés, restaurantes y bares, todo a pocos kilómetros del Puerto de Pollença. Su puente romano, señalizado ‘Pont Roma’ sigue en uso.",
+            "image": "https://static.seetheworld.com/image_uploader/photos/d8/original/pollenca-pollensa-pollensa-pollenca-982.jpg",
+            "location": "Pollença, Mallorca, Islas Baleares, España",
+            "city": "Mallorca",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12247.623295283278!2d3.006869786752458!3d39.87634737090374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297d6a0db5e5103%3A0x2aec5ed1cb734537!2s07460%20Pollensa%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1679822230563!5m2!1ses!2ses",
+            "category": [
+                "paseo",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Precioso pueblo para pasear y disfrutar de la gastronomía local."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Un lugar muy bonito para visitar."
+                },
+                {
+                    "username": "Ana Lopez",
+                    "opinion": "Un pueblo muy bonito y tranquilo."
+                }
+            ]
+        }
+    ]
+}

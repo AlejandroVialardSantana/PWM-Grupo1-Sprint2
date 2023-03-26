@@ -13,7 +13,7 @@ function loginValidation() {
         event.preventDefault(); // Prevenir el envío del formulario
         const email = document.getElementById('email').value;
         const contraseña = document.getElementById('password').value;
-        fetch('../json/users.json')
+        fetch('./json/users.json')
             .then(function (response) {
                 if (response.ok) {
                     return response.json();

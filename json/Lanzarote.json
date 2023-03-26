@@ -1,0 +1,62 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Parque Nacional de Timanfaya",
+            "description": "El parque nacional de Timanfaya es un espacio natural protegido español situado en los municipios de Yaiza y Tinajo, en la isla de Lanzarote, comunidad autónoma de Canarias. En 2020 recibió 1 655 772 visitantes siendo el segundo parque nacional en número de visitas de Canarias, tras el parque nacional del Teide en Tenerife, así como también es el cuarto de España, tras el del Teide, el de la Sierra de Guadarrama y el de los Picos de Europa.",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Timanfaya_colors_-_25411490706.jpg/1200px-Timanfaya_colors_-_25411490706.jpg",
+            "location": "Lanzarote, Las Palmas, España",
+            "city": "Lanzarote",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78922.43730033854!2d-13.599499813151887!3d29.04918647265955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc463e97f5c75451%3A0xdf4ceaeee98a623e!2sParque%20Nacional%20de%20Timanfaya!5e0!3m2!1ses!2ses!4v1679819959447!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "cultura",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Excelente servicio, cuidada calidad a precios razonables"
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Escelso, una belleza propia de la naturaleza. Magnifico recorrido por el espacio natural con imágenes alucinantes. Recomendable e que imprescindible visitar."
+                },
+                {
+                    "username": "Ana Lopez",
+                    "opinion": "Un lugar espectacular, con unas vistas increíbles. El personal muy amable y atento. Muy recomendable."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Jameos del Agua",
+            "description": "Los Jameos del Agua es el primer Centro de Arte, Cultura y Turismo creado por César Manrique, en un espacio natural originado en el interior de un túnel volcánico. Inaugurado en 1968, el artista, pintor y escultor transformó el espacio dando lugar a una obra única en el mundo que representa la máxima expresión de su ideario: la creación artística en armonía con el medio y la naturaleza.",
+            "image": "https://cactlanzarote.com/wp-content/uploads/2022/03/JameosdelAguaCabecera.jpg",
+            "location": "LZ 204, Parcela 109, Carretera Arrieta - Órzola S/N Lanzarote, 35542 Punta Mujeres, Las Palmas",
+            "city": "Lanzarote",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.2465637094188!2d-13.433916534905505!3d29.157405632213724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc48a3cae1795a81%3A0x30e1e3972e3751ca!2sJameos%20del%20Agua%20%7C%20CACT!5e0!3m2!1ses!2ses!4v1679820627929!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "cultura",
+                "aire libre",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Excelente servicio, cuidada calidad a precios razonables"
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Escelso, una belleza propia de la naturaleza. Magnifico recorrido por el espacio natural con imágenes alucinantes. Recomendable e que imprescindible visitar."
+                },
+                {
+                    "username": "Ana Lopez",
+                    "opinion": "Un lugar espectacular, con unas vistas increíbles. El personal muy amable y atento. Muy recomendable."
+                }
+            ]
+        }
+    ]
+}

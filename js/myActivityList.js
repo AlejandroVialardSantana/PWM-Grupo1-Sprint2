@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', init);
 
+
 function init() {
     loadTemplate('../views/header.html', 'main_header', () => logedIn());
     loadTemplate('../views/footer.html', 'main_footer');
-    loadTemplate('../views/aboutUsTemplate.html', 'about_us');
+    loadTemplate('../views/searchBar.html', 'home');
+    loadTemplate('../views/myActivities.html', 'my_activities');;
 }
 
 function loadTemplate(url, id, callback) {

@@ -5,7 +5,7 @@ const offsetActivityContainerHeightInRem = 10;
 var actualActivityContainerHeightInRem = 0;
 
 function init() {
-    loadTemplate('../views/header.html', 'main_header');
+    loadTemplate('../views/header.html', 'main_header', () => logedIn());
     loadTemplate('../views/footer.html', 'main_footer');
     loadTemplate('../views/filtros.html', 'activities_container_filtros');
     loadTemplate('../views/activityContainer.html', 'activities_container_activity', function() {
@@ -244,4 +244,23 @@ function loadTemplate(url, id, callback) {
                 callback();
             }
         });
+}
+
+function logedIn() {
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if (usuario) {
+        const headerDropdown = document.querySelector('.bi-person .dropdown_content');
+        if (headerDropdown) {
+            headerDropdown.innerHTML = `
+        <a href="../accountManagement.html">Perfil</a>
+        <a href="../myActivityList.html">Mis actividades</a>
+        <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>`
+
+        }
+    }
+}
+
+function cerrarSesion() {
+    localStorage.removeItem("usuario");
+    window.location.href = "../index.html";
 }

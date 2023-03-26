@@ -1,0 +1,28 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Observatorio Astrofísico",
+            "description": "Roque Nublo es una formación rocosa en la cumbre de la isla de Gran Canaria, en las Islas Canarias, España. Es uno de los puntos turísticos más populares de la isla debido a su belleza natural y su importancia cultural para los habitantes de la isla.",
+            "image": "https://www.telemadrid.es/2021/09/27/noticias/sociedad/Instalaciones-Telescopio-Canarias-Roque-Muchachos_2381771872_29816106_1300x731.jpg",
+            "location": "Observatorio Roque de los Muchachos, s/n, 38728 Villa de, Santa Cruz de Tenerife",
+            "city": "La Palma",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.736575284521!2d-17.887173984914632!3d28.75728098236874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6bf074f599aaab%3A0x8938042021c61cf!2sObservatorio%20Astrof%C3%ADsico%20Roque%20de%20Los%20Muchachos!5e0!3m2!1ses!2ses!4v1679819358191!5m2!1ses!2ses",
+            "category": [
+                "ciencias",
+                "cultura",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Uno de los aires más limpios del planeta, de ahí la instalación de numerosos telescopios. Se accede en coche aunque el acceso es restringido. Pasando de largo se llega al Roque de los Muchachos."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Perfecto para amantes de las estrellas a simple vista, con visita al interior del observatorio mejor, una inmensidad de estrellas, fugaces, constelaciones,... Las horas ahí vuelan y si te gusta la fotografía nocturna, lleva cafetera o tetera que ayudará bastante"
+                }
+            ]
+        }
+    ]
+}

@@ -178,7 +178,19 @@ async function loadAllDestinies(destiniesUrls, category) {
 }
 
 function loadDestiniesRecommendations(id, category, title, callback) {
-    const destiniesUrls = ['../json/Madrid.json', '../json/Málaga.json', '../json/Gran Canaria.json', '../json/Barcelona.json',];
+    const destiniesUrls = [
+        "../json/Madrid.json", 
+        "../json/Málaga.json", 
+        "../json/Gran Canaria.json", 
+        "../json/Barcelona.json", 
+        "../json/Ibiza.json", 
+        "../json/La Palma.json", 
+        "../json/Lanzarote.json", 
+        "../json/Mallorca.json",
+        "../json/Menorca.json",
+        "../json/Sevilla.json",
+        "../json/Tenerife.json"
+      ]
 
     loadAllDestinies(destiniesUrls, category).then(allDestinies => {
         const randomDestinies = getRandomDestinies(allDestinies, 6);

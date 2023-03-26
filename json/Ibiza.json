@@ -1,0 +1,53 @@
+{
+    "activities": [
+        {
+            "id": "1",
+            "name": "Cala Tarida",
+            "description": "La Cala Tarida, cala de 260 metros está situada en una zona residencial de Sant Josep de Sa Talaia por lo que cuenta con chiringuitos, restaurantes, hoteles, y todo lo que el turista pueda desear. Sus aguas tranquilas la hacen idónea para el baño y para practicar algunos deportes acuáticos como el esnórquel. Es, también, adecuada para familias con niños.",
+            "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/cala-tarida_ibiza_888.jpg",
+            "location": "Cala Tarida, Sant Josep de Sa Talaia, Ibiza, Islas Baleares, España",
+            "city": "Ibiza",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2194.334470512563!2d1.2338264037950921!3d38.94094378766224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12994ae30e13617b%3A0x204a9b431fff0ce!2sC%2F%20de%20Cala%20Tarida%2C%2007829%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1679818600721!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "aire libre",
+                "playa"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Muy bonita, algo que tienes que ver."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Muy bonita, algo que tienes que ver."
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Cala Salada",
+            "description": "Cala Salada y su hermana Saladeta se encuentran separadas solo por un pequeño accidente rocoso y están integradas en el Área Natural de Especial Interés de Es Amunts. A la estampa playera compuesta de arena dorada y mar turquesa la acompaña un bosque de pinos y unas casetas varadero de pescadores. Además, está a solo 4 kilómetros de Sant Antoni de Portmany y cuenta con algunos servicios imprescindibles de playa.",
+            "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/10/cala-saladeta_ibiza_888.jpg",
+            "location": "Cala Salada, Sant Antonio de Portmany, Ibiza, Islas Baleares, España",
+            "city": "Ibiza",
+            "location_map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7812.105301088053!2d1.288704978140775!3d39.009929168397534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12993670e482b863%3A0x4de052eb3d2a5e0b!2sCala%20Salada!5e0!3m2!1ses!2ses!4v1679818872102!5m2!1ses!2ses",
+            "category": [
+                "naturaleza",
+                "aire libre",
+                "playa",
+                "destacado"
+            ],
+            "user_reviews": [
+                {
+                    "username": "Marta Garcia",
+                    "opinion": "Cala preciosa, pero muy llena de gente. Recomendable ir pronto, el parking es gratis, aunque hay aforo y a partir de las once es complicado que haya sitio. Hay tumbonas y hamacas de pago y un chiringuito."
+                },
+                {
+                    "username": "Juan Perez",
+                    "opinion": "Muy bonita, algo que tienes que ver."
+                }
+            ]
+        }
+    ]
+}
